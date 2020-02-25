@@ -1,1 +1,106 @@
 @import "style.css";
+
+.section-photo {
+    display: flex;
+}
+
+.section-photo__nike, .section-photo__caps {
+    width: 50%;
+    position: relative;
+    min-width: 335px;
+}
+
+.section-photo__nike img {
+    width: 100%;
+    height: auto;
+}
+
+.section-photo__caps img {
+    width: 70%;
+    height: auto;
+}
+
+.section-photo__nike {
+    padding: 20px;
+}
+
+.section-photo__caps {
+    padding-left: 48px;
+    border-left: 1px solid #e5e5e5;
+}
+
+.section-photo__description {
+    position: absolute;
+    top: 13%;
+    right: 10%;
+}
+
+.section-photo__description a {
+    letter-spacing: 1px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-align: center;
+}
+
+.section-photo__description p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #757575;
+    font-family: "Times New Roman";
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+}
+
+.section-photo__description h2 {
+    margin: 0;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .section-photo__description {
+        position: absolute;
+        top: 10%;
+        right: 8%;
+    }
+
+    .section-photo__description a {
+        letter-spacing: 1px;
+        color: #000000;
+        font-family: "Open Sans";
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .section-photo__description p {
+        font-size: 16px;
+        line-height: 26px;
+        color: #757575;
+        font-family: "Times New Roman";
+        font-style: italic;
+        text-align: center;
+        margin: 0;
+    }
+
+    .section-photo__description h2 {
+        font-size: 22px;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    .section-photo__description h2 {
+        /*font-size: 22px;*/
+    }
+    .section-photo__caps{
+        display: none;
+    }
+    .section-photo__nike{
+        width: 100%;
+    }
+
+
+}
+
+
