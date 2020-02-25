@@ -56,6 +56,29 @@
 .section-photo__description h2 {
     margin: 0;
 }
+.bestOffer__description{
+text-align: center;
+    margin: 105px auto 75px;
+}
+.bestOffer__description h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-align: center;
+}
+.bestOffer__description p{
+    width: 894px;
+    height: 28px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-style: italic;
+    text-align: center;
+    margin: 0 auto;
+}
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .section-photo__description {
@@ -86,6 +109,25 @@
         font-size: 22px;
 
     }
+    .bestOffer__description h1{
+        font-size: 40px;
+        letter-spacing: 1px;
+        line-height: 65px;
+        color: #000000;
+        font-family: "Open Sans";
+        font-weight: 700;
+        text-align: center;
+    }
+    .bestOffer__description p{
+        width: 671px;
+        height: 56px;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+        font-family: "Times New Roman";
+        font-style: italic;
+        margin: 0 auto;
+    }
 
 }
 
@@ -99,6 +141,30 @@
     .section-photo__nike{
         width: 100%;
     }
+    .bestOffer__description{
+        margin: 50px auto 75px;
+    }
+    .bestOffer__description h1{
+        font-size: 26px;
+        letter-spacing: 1px;
+        line-height: 65px;
+        color: #000000;
+        font-family: "Open Sans";
+        font-weight: 700;
+        text-align: center;
+    }
+    .bestOffer__description p{
+        width: 336px;
+        height: 86px;
+        font-size: 14px;
+        line-height: 30px;
+        color: #000000;
+        font-family: "Times New Roman";
+        font-style: italic;
+        text-align: center;
+        margin: 0 auto;
+    }
+
 
 
 }
