@@ -129,8 +129,36 @@
       </section>
    </div>
    <div class = "container">
-      <section class="slider">
+      <section class = "slider">
 
+         <script id = "slider__card-left" type = "text/template">
+            <% for(var k = 0; k < window.bestOffer.left.length; k++) { %>
+            <div class = "slider__card-left">
+               <div><%=list[k].img%></div>
+               <p><%=list[k].title%></p>
+               <p><%=list[k].price%></p>
+            </div>
+            <% } %>
+         </script>
+         <script id = "slider__card-right" type = "text/template">
+            <% for(var j = 0; j < window.bestOffer.right.length; j++) { %>
+            <div class = "slider__card-right">
+               <div><%=lists[j].img%></div>
+               <p><%=lists[j].title%></p>
+               <p><%=lists[j].price%></p>
+            </div>
+            <% } %>
+         </script>
+
+         <div class = "slider__left">
+            <div class = "slider_area">
+               <div id = "slider__wrapper-left"></div>
+            </div>
+
+            <div class = "slider_area2">
+               <div id = "slider__wrapper-right"></div>
+            </div>
+         </div>
 
       </section>
    </div>

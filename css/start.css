@@ -56,11 +56,13 @@
 .section-photo__description h2 {
     margin: 0;
 }
-.bestOffer__description{
-text-align: center;
+
+.bestOffer__description {
+    text-align: center;
     margin: 105px auto 75px;
 }
-.bestOffer__description h1{
+
+.bestOffer__description h1 {
     font-size: 50px;
     letter-spacing: 2px;
     color: #000000;
@@ -68,7 +70,8 @@ text-align: center;
     font-weight: 700;
     text-align: center;
 }
-.bestOffer__description p{
+
+.bestOffer__description p {
     width: 894px;
     height: 28px;
     font-size: 16px;
@@ -80,7 +83,46 @@ text-align: center;
     margin: 0 auto;
 }
 
+.slider__card-left p, .slider__card-right p  {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #000000;
+    font-family: "Roboto";
+    font-weight: 400;
+    text-align: center;
+}
+
+.slider__card-left p:nth-child(2), .slider__card-right p:nth-child(2){
+    margin: 50px 0 24px 0;
+    font-weight: 700;
+}
+
+.slider_area, .slider_area2{
+     width: 240px;
+     height: 450px;
+     margin: 0 auto;
+     /*overflow: hidden;*/
+     position: relative;
+ }
+
+#slider__wrapper-left {
+    transition: .7s ease-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slider__left{
+    display: flex;
+    width: 100%;
+}
+
 @media (min-width: 769px) and (max-width: 1024px) {
+    .slider_area {
+        max-width: 210px;
+        height: 380px;
+    }
+
     .section-photo__description {
         position: absolute;
         top: 10%;
@@ -109,7 +151,8 @@ text-align: center;
         font-size: 22px;
 
     }
-    .bestOffer__description h1{
+
+    .bestOffer__description h1 {
         font-size: 40px;
         letter-spacing: 1px;
         line-height: 65px;
@@ -118,7 +161,8 @@ text-align: center;
         font-weight: 700;
         text-align: center;
     }
-    .bestOffer__description p{
+
+    .bestOffer__description p {
         width: 671px;
         height: 56px;
         font-size: 16px;
@@ -132,19 +176,19 @@ text-align: center;
 }
 
 @media (max-width: 768px) {
-    .section-photo__description h2 {
-        /*font-size: 22px;*/
-    }
-    .section-photo__caps{
+    .section-photo__caps {
         display: none;
     }
-    .section-photo__nike{
+
+    .section-photo__nike {
         width: 100%;
     }
-    .bestOffer__description{
+
+    .bestOffer__description {
         margin: 50px auto 75px;
     }
-    .bestOffer__description h1{
+
+    .bestOffer__description h1 {
         font-size: 26px;
         letter-spacing: 1px;
         line-height: 65px;
@@ -153,7 +197,8 @@ text-align: center;
         font-weight: 700;
         text-align: center;
     }
-    .bestOffer__description p{
+
+    .bestOffer__description p {
         width: 336px;
         height: 86px;
         font-size: 14px;
@@ -164,9 +209,6 @@ text-align: center;
         text-align: center;
         margin: 0 auto;
     }
-
-
-
 }
 
 
