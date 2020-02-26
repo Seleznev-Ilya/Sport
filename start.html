@@ -128,42 +128,60 @@
          </div>
       </section>
    </div>
+
    <div class = "container">
       <section class = "slider">
 
-         <script id = "slider__card-left" type = "text/template">
-            <% for(var k = 0; k < window.bestOffer.left.length; k++) { %>
-            <div class = "slider__card-left">
-               <div><%=list[k].img%></div>
-               <p><%=list[k].title%></p>
-               <p><%=list[k].price%></p>
-            </div>
-            <% } %>
-         </script>
-         <script id = "slider__card-right" type = "text/template">
-            <% for(var j = window.bestOffer.left.length; j < window.bestOffer.right.length + window.bestOffer.left.length; j++) { %>
-            <div class = "slider__card-right">
-               <div><%=list[j].img%></div>
-               <p><%=list[j].title%></p>
-               <p><%=list[j].price%></p>
-            </div>
-            <% } %>
-         </script>
+         <div class = "slider__block">
+            <script id = "slider__card-left" type = "text/template">
+               <% for(var k = 0; k < window.bestOffer.left.length; k++) { %>
+               <div class = "slider__card-left">
+                  <div class = "block__image--height"><%=list[k].img%></div>
+                  <p><%=list[k].title%></p>
+                  <p><%=list[k].price%></p>
+               </div>
+               <% } %>
+            </script>
+            <script id = "slider__card-right" type = "text/template">
+               <% for(var j = window.bestOffer.left.length; j < window.bestOffer.right.length + window.bestOffer.left.length; j++) { %>
+               <div class = "slider__card-right">
+                  <div class = "block__image--height"><%=list[j].img%></div>
+                  <p><%=list[j].title%></p>
+                  <p><%=list[j].price%></p>
+               </div>
+               <% } %>
+            </script>
 
-         <div class = "slider__left">
-            <div class = "slider_area">
-               <div id = "slider__wrapper-left"></div>
+            <div class = "button__slider-wrapper">
+               <div class = "slider_area">
+                  <div id = "slider__wrapper-left"></div>
+               </div>
+               <div class = "slider__button" id = "slider__button-left-top">
+                  <img alt = "arrows_top" src = "img/icons/arrows_top.png">
+               </div>
+               <div class = "slider__button" id = "slider__button-left-down">
+                  <img alt = "arrows_down" src = "img/icons/arrows_down.png">
+               </div>
             </div>
-
-            <div class = "slider_area2">
-               <div id = "slider__wrapper-right"></div>
+            <div class = "button__slider-wrapper2">
+               <div class = "slider_area2">
+                  <div id = "slider__wrapper-right"></div>
+               </div>
+               <div class = "slider__button" id = "slider__button-right-top">
+                  <img alt = "arrows_top" src = "img/icons/arrows_top.png">
+               </div>
+               <div class = "slider__button" id = "slider__button-right-down">
+                  <img alt = "arrows_down" src = "img/icons/arrows_down.png">
+               </div>
             </div>
          </div>
          <div class = "slider__equal">
             <h1>equal</h1>
          </div>
+
       </section>
    </div>
+
 </main>
 <footer>
    <hr>
