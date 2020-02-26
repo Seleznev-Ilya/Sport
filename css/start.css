@@ -221,7 +221,7 @@
     background-repeat: no-repeat;
     position: absolute;
     top: 35%;
-    left: -140%;
+    left: -150px;
     transition: .5s;
 }
 
@@ -270,7 +270,7 @@
         background-repeat: no-repeat;
         position: absolute;
         top: 35%;
-        left: -80%;
+        left: -100px;
         transition: .5s;
     }
     .slider__bag-wrapper {

@@ -9,5 +9,6 @@ window.bestOffer = {
         '5677f851-1c4a-4e9b-80e9-16d1e6265257', // Levi's Jeans for women,
         '07cf6ce2-6eee-4e78-a441-f257fdea7ed6' // Boyfriend T-Shirt with Bohemian print
 
+
     ]
 };

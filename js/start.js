@@ -12,7 +12,7 @@ function drawSliderCards() {
                 let price = `${priceCard}`;
                 cardItem.push({
                     title: key['title'],
-                    price: price,
+                    price: `£${price}`,
                     img: image
                 });
                 priceLeft.push({
@@ -38,7 +38,7 @@ function drawSliderCards() {
                 let price2 = `${priceCard2}`;
                 cardItem.push({
                     title: key2['title'],
-                    price: price2,
+                    price: `£${price2}`,
                     img: image2
                 });
                 priceRight.push({
