@@ -2,7 +2,6 @@ const cardItem = [];
 const priceRight = [];
 const priceLeft = [];
 
-
 function drawSliderCards() {
     for (let key of window.catalog) {
         for (let i = 0; i < window.bestOffer['left'].length; i++) {
@@ -57,18 +56,17 @@ function drawSliderCards() {
     });
 }
 
+drawSliderCards();
 let slider = document.getElementById('slider__wrapper-left');
 let counterLeft = 0;
 let offset = 0;
 let slider2 = document.getElementById('slider__wrapper-right');
-
 let counterRight = 0;
 let offsetRight = 0;
 let btnRightTop = document.getElementById('slider__button-right-top');
 let btnRightDown = document.getElementById('slider__button-right-down');
 let btnLeftTop = document.getElementById('slider__button-left-top');
 let btnLeftDown = document.getElementById('slider__button-left-down');
-
 btnRightTop.addEventListener('click', function () {
     if (offsetRight === 0) {
         offsetRight += -450 * (window.bestOffer.right.length - 1);
@@ -121,7 +119,6 @@ btnLeftTop.addEventListener('click', function () {
         counterLeft--;
     }
 });
-
 btnLeftTop.addEventListener('click', () => {
     let a = document.getElementById('notDiscountedPrice');
     let b = document.getElementById('discountedPrice');
@@ -147,7 +144,6 @@ btnRightTop.addEventListener('click', () => {
     b.innerHTML = `£${(+priceLeft[counterLeft].price + +priceRight[counterRight].price) - window.bestOffer.discount}`;
 });
 
-drawSliderCards();
 
 
 
