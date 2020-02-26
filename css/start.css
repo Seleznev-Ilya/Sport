@@ -425,8 +425,6 @@
     .slider__bag--mobile-table-show {
         display: block;
         position: unset;
-        /*top: 60%;*/
-        /*left: calc(50% - 345px / 2);*/
         width: 220px;
         height: 75px;
         border: 1px solid #e5e5e5;
@@ -442,6 +440,7 @@
     }
 
     .slider__equal {
+        margin-top: 30px;
         width: 100%;
     }
 
