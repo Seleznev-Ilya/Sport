@@ -131,56 +131,81 @@
 
    <div class = "container">
       <section class = "slider">
+         <div class = "slider__wrapper">
+            <div class = "slider__block">
+               <script id = "slider__card-left" type = "text/template">
+                  <% for(var k = 0; k < window.bestOffer.left.length; k++) { %>
+                  <div class = "slider__card-left">
+                     <div class = "block__image--height"><%=list[k].img%></div>
+                     <p><%=list[k].title%></p>
+                     <p><%=list[k].price%></p>
+                  </div>
+                  <% } %>
+               </script>
+               <script id = "slider__card-right" type = "text/template">
+                  <% for(var j = window.bestOffer.left.length; j < window.bestOffer.right.length + window.bestOffer.left.length; j++) { %>
+                  <div class = "slider__card-right">
+                     <div class = "block__image--height"><%=list[j].img%></div>
+                     <p><%=list[j].title%></p>
+                     <p><%=list[j].price%></p>
+                  </div>
+                  <% } %>
+               </script>
 
-         <div class = "slider__block">
-            <script id = "slider__card-left" type = "text/template">
-               <% for(var k = 0; k < window.bestOffer.left.length; k++) { %>
-               <div class = "slider__card-left">
-                  <div class = "block__image--height"><%=list[k].img%></div>
-                  <p><%=list[k].title%></p>
-                  <p><%=list[k].price%></p>
+               <div class = "button__slider-wrapper">
+                  <div class = "slider_area">
+                     <div id = "slider__wrapper-left"></div>
+                  </div>
+                  <div class = "slider__button" id = "slider__button-left-top">
+                     <img alt = "arrows_top" src = "img/icons/arrows_top.png">
+                  </div>
+                  <div class = "slider__button" id = "slider__button-left-down">
+                     <img alt = "arrows_down" src = "img/icons/arrows_down.png">
+                  </div>
                </div>
-               <% } %>
-            </script>
-            <script id = "slider__card-right" type = "text/template">
-               <% for(var j = window.bestOffer.left.length; j < window.bestOffer.right.length + window.bestOffer.left.length; j++) { %>
-               <div class = "slider__card-right">
-                  <div class = "block__image--height"><%=list[j].img%></div>
-                  <p><%=list[j].title%></p>
-                  <p><%=list[j].price%></p>
-               </div>
-               <% } %>
-            </script>
-
-            <div class = "button__slider-wrapper">
-               <div class = "slider_area">
-                  <div id = "slider__wrapper-left"></div>
-               </div>
-               <div class = "slider__button" id = "slider__button-left-top">
-                  <img alt = "arrows_top" src = "img/icons/arrows_top.png">
-               </div>
-               <div class = "slider__button" id = "slider__button-left-down">
-                  <img alt = "arrows_down" src = "img/icons/arrows_down.png">
+               <div class = "button__slider-wrapper2">
+                  <div class = "slider_area2">
+                     <div id = "slider__wrapper-right"></div>
+                  </div>
+                  <div class = "slider__button" id = "slider__button-right-top">
+                     <img alt = "arrows_top" src = "img/icons/arrows_top.png">
+                  </div>
+                  <div class = "slider__button" id = "slider__button-right-down">
+                     <img alt = "arrows_down" src = "img/icons/arrows_down.png">
+                  </div>
                </div>
             </div>
-            <div class = "button__slider-wrapper2">
-               <div class = "slider_area2">
-                  <div id = "slider__wrapper-right"></div>
+            <div class = "slider__equal">
+
+               <div class="slider__equal-wrapper">
+
+                  <div class = "slider__line-not">
+                     <img alt = "" src = "img/icons/Rectangle.png">
+                  </div>
+                  <div id = "notDiscountedPrice">
+                     £161.00
+                  </div>
+                  <div id = "discountedPrice">
+                     £146.00
+                  </div>
+
                </div>
-               <div class = "slider__button" id = "slider__button-right-top">
-                  <img alt = "arrows_top" src = "img/icons/arrows_top.png">
-               </div>
-               <div class = "slider__button" id = "slider__button-right-down">
-                  <img alt = "arrows_down" src = "img/icons/arrows_down.png">
+
+               <div class = "slider__bag slider__bag--mobile-table-hide">
+                  <p>Add to bag</p>
                </div>
             </div>
          </div>
-         <div class = "slider__equal">
-            <h1>equal</h1>
+         <div class="slider__bag-wrapper">
+            <div class = "slider__bag slider__bag--mobile-table-show">
+               <p>Add to bag</p>
+            </div>
          </div>
 
       </section>
    </div>
+   <hr>
+   <br>
 
 </main>
 <footer>
