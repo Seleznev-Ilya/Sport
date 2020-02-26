@@ -94,6 +94,7 @@
     display: flex;
     justify-content: space-around;
     width: 61%;
+    position: relative;
 }
 
 
@@ -144,6 +145,7 @@
 
 .slider__button {
     cursor: pointer;
+    z-index: 7;
 }
 
 #slider__wrapper-left {
@@ -210,6 +212,18 @@
     font-weight: 700;
     text-align: right;
 }
+#discountedPrice:before{
+    content: '';
+    height: 14px;
+    width: 14px;
+    background-image: url("../img/icons/=.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 35%;
+    left: -140%;
+    transition: .5s;
+}
 
 .slider__bag {
     position: absolute;
@@ -240,8 +254,25 @@
     width: 220px;
     height: 100px;
 }
-
+.slider__plus{
+    position: absolute;
+    top: calc( 50% - 12px /2);
+    right: calc( 50% - 12px /2);
+    z-index: 200;
+}
 @media (min-width: 769px) and (max-width: 1024px) {
+    #discountedPrice:before{
+        content: '';
+        height: 14px;
+        width: 14px;
+        background-image: url("../img/icons/=.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 35%;
+        left: -80%;
+        transition: .5s;
+    }
     .slider__bag-wrapper {
         display: flex;
         justify-content: center;
@@ -392,6 +423,18 @@
 }
 
 @media (max-width: 768px) {
+    #discountedPrice:before{
+        content: '';
+        height: 14px;
+        width: 14px;
+        background-image: url("../img/icons/=.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 35%;
+        left: -45%;
+        transition: .5s;
+    }
     .slider__equal-wrapper {
         position: relative;
         margin: 20px auto 0;
