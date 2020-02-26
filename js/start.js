@@ -1,5 +1,5 @@
 let cardItem;
-let cardItem2;
+
 
 function drawSliderCards() {
     cardItem = [];
@@ -32,7 +32,7 @@ function drawSliderCards() {
                 let priceCard2 = key2['price'];
                 let image2 = `<img src = " ${imgPath2} " alt = " ${key2['title']}" title = " ${key2['title']}">`;
                 let price2 = `£${priceCard2}`;
-                cardItem2.push({
+                cardItem.push({
                     title: key2['title'],
                     price: price2,
                     img: image2
@@ -43,7 +43,7 @@ function drawSliderCards() {
     let tmpl2 = document.getElementById('slider__card-right').innerHTML.trim();
     tmpl2 = _.template(tmpl2);
     document.getElementById('slider__wrapper-right').innerHTML = tmpl2({
-        lists: cardItem2
+        list: cardItem
     });
 }
 

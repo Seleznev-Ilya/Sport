@@ -141,11 +141,11 @@
             <% } %>
          </script>
          <script id = "slider__card-right" type = "text/template">
-            <% for(var j = 0; j < window.bestOffer.right.length; j++) { %>
+            <% for(var j = window.bestOffer.left.length; j < window.bestOffer.right.length + window.bestOffer.left.length; j++) { %>
             <div class = "slider__card-right">
-               <div><%=lists[j].img%></div>
-               <p><%=lists[j].title%></p>
-               <p><%=lists[j].price%></p>
+               <div><%=list[j].img%></div>
+               <p><%=list[j].title%></p>
+               <p><%=list[j].price%></p>
             </div>
             <% } %>
          </script>
@@ -159,7 +159,9 @@
                <div id = "slider__wrapper-right"></div>
             </div>
          </div>
-
+         <div class = "slider__equal">
+            <h1>equal</h1>
+         </div>
       </section>
    </div>
 </main>
