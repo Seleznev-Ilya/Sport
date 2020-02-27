@@ -143,8 +143,38 @@ btnRightTop.addEventListener('click', () => {
     a.innerHTML = `£${+priceLeft[counterLeft].price + +priceRight[counterRight].price}`;
     b.innerHTML = `£${(+priceLeft[counterLeft].price + +priceRight[counterRight].price) - window.bestOffer.discount}`;
 });
+let  arr = [];
+function arrivals() {
+let arrItems = {
+            line: [
+            '739d3ae0-6dca-4453-a7a4-a94b841a296d', //'With Patchwork Crochet'
+            '8c061815-6a7d-4465-bb78-1bdc6c5adebf', // Only Skinny Jeans
+            '8b300772-eee3-4ff1-b091-e89f17e0e469', //'Neck Knitted Jumper'
+            '9ded7821-e510-4a16-ba9f-57c1e3442ad8'//'Turtle Neck Jumper in Rib'
+        ]};
+    for (let key of window.catalog) {
+        for (let i = 0; i < arrItems['line'].length; i++) {
+            if (arrItems['line'][i] === key['id']) {
+                let imgPath = key['preview'][0];
+                let priceCard = key['price'];
+                let image = `<img src = " ${imgPath} " alt = " ${key['title']}" title = " ${key['title']}">`;
+                let price = `${priceCard}`;
 
-
+                arr.push({
+                    title: key['title'],
+                    price: price,
+                    img: image
+                });
+            }
+        }
+    }
+    let tmpl = document.getElementById('arrivals__card').innerHTML.trim();
+    tmpl = _.template(tmpl);
+    document.getElementById('arrivals__cards').innerHTML = tmpl({
+        list: arr
+    });
+}
+arrivals();
 
 
 

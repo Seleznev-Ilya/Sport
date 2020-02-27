@@ -81,7 +81,7 @@ window.catalog = [{
     colors: [],
     sizes: [],
     thumbnail: 'thumbnail path', // replace with image extracted from item layout
-    preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
+    preview: ['img/page_1/withPachworkCrochet.png', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
 }, {
     id: '80d32566-d81c-4ba0-9edf-0eceda3b4360',
     dateAdded: '2017-01-01T13:26:14.000Z',
@@ -109,7 +109,7 @@ window.catalog = [{
     colors: ['Green'],
     sizes: ['UK 19'],
     thumbnail: 'thumbnail path', // replace with image extracted from item layout
-    preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
+    preview: ['img/page_1/neckKinittedJumper.png', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
 }, {
     id: '8c061815-6a7d-4465-bb78-1bdc6c5adebf',
     dateAdded: '2017-08-28T09:15:36.000Z',
@@ -137,7 +137,7 @@ window.catalog = [{
     colors: [],
     sizes: [],
     thumbnail: 'thumbnail path', // replace with image extracted from item layout
-    preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
+    preview: ['img/page_1/turtleNeckJumper.png', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
 }, {
     id: 'bec71daa-d133-473d-bbb0-1ee0a427a17d',
     dateAdded: '2017-03-09T17:51:45.000Z',

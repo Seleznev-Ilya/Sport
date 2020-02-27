@@ -205,7 +205,26 @@
       </section>
    </div>
    <hr>
-   <br>
+   <div class="container">
+      <section class="arrivals">
+         <script id = "arrivals__card" type = "text/template">
+            <% for(var k = 0; k < 4; k++) { %>
+            <div class = "arrivals__cards">
+               <div class = "arrivals-block__cards"><%=list[k].img%></div>
+               <p><%=list[k].title%></p>
+               <p><%=list[k].price%></p>
+            </div>
+            <% } %>
+         </script>
+         <h1>New arrivals</h1>
+         <div id="arrivals__cards"></div>
+         <div class="slider__bag-wrapper">
+            <div class = "arrivals__all arrivals__all--mobile-table-show">
+               <p><a href = "#">All arrivals</a></p>
+            </div>
+         </div>
+      </section>
+   </div>
 
 </main>
 <footer>
