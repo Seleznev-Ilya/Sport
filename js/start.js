@@ -1,14 +1,14 @@
-const cardItem = [];
-const priceRight = [];
-const priceLeft = [];
+const cardItem = []; // for draw rads
+const priceRight = []; // to get data to calculate common price with slider left
+const priceLeft = []; // to get data to calculate ... right
 
 function drawSliderCards() {
-    for (let key of window.catalog) {
-        for (let i = 0; i < window.bestOffer['left'].length; i++) {
-            if (window.bestOffer['left'][i] === key['id']) {
+    for (let key of window.catalog) { // card (key) of catalog cards
+        for (let i = 0; i < window.bestOffer['left'].length; i++) { //loop by length of left slider
+            if (window.bestOffer['left'][i] === key['id']) { // id from left slider compare with id from catalog cards
                 let imgPath = key['preview'][0];
                 let priceCard = key['price'];
-                let image = `<img src = " ${imgPath} " alt = " ${key['title']}" title = " ${key['title']}">`;
+                let image = `<img src="${imgPath}" alt="${key['title']}" title=" ${key['title']}">`;
                 let price = `${priceCard}`;
                 cardItem.push({
                     title: key['title'],
@@ -29,12 +29,12 @@ function drawSliderCards() {
         list: cardItem
     });
 
-    for (let key2 of window.catalog) {
-        for (let q = 0; q < window.bestOffer['right'].length; q++) {
-            if (window.bestOffer['right'][q] === key2['id']) {
+    for (let key2 of window.catalog) { // card (key) of catalog cards
+        for (let q = 0; q < window.bestOffer['right'].length; q++) { //loop by length of right slider
+            if (window.bestOffer['right'][q] === key2['id']) { // id from right slider compare with id from catalog cards
                 let imgPath2 = key2['preview'][0];
                 let priceCard2 = key2['price'];
-                let image2 = `<img src = " ${imgPath2} " alt = " ${key2['title']}" title = " ${key2['title']}">`;
+                let image2 = `<img src="${imgPath2}" alt="${key2['title']}" title="${key2['title']}">`;
                 let price2 = `${priceCard2}`;
                 cardItem.push({
                     title: key2['title'],
@@ -143,15 +143,17 @@ btnRightTop.addEventListener('click', () => {
     a.innerHTML = `£${+priceLeft[counterLeft].price + +priceRight[counterRight].price}`;
     b.innerHTML = `£${(+priceLeft[counterLeft].price + +priceRight[counterRight].price) - window.bestOffer.discount}`;
 });
-let  arr = [];
+let arr = [];
+
 function arrivals() {
-let arrItems = {
-            line: [
+    let arrItems = {
+        line: [
             '739d3ae0-6dca-4453-a7a4-a94b841a296d', //'With Patchwork Crochet'
             '8c061815-6a7d-4465-bb78-1bdc6c5adebf', // Only Skinny Jeans
             '8b300772-eee3-4ff1-b091-e89f17e0e469', //'Neck Knitted Jumper'
             '9ded7821-e510-4a16-ba9f-57c1e3442ad8'//'Turtle Neck Jumper in Rib'
-        ]};
+        ]
+    };
     for (let key of window.catalog) {
         for (let i = 0; i < arrItems['line'].length; i++) {
             if (arrItems['line'][i] === key['id']) {
@@ -174,7 +176,9 @@ let arrItems = {
         list: arr
     });
 }
+
 arrivals();
+
 
 
 

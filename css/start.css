@@ -211,7 +211,8 @@
     font-weight: 700;
     text-align: right;
 }
-#discountedPrice:before{
+
+#discountedPrice:before {
     content: '';
     height: 14px;
     width: 14px;
@@ -233,6 +234,7 @@
     border: 1px solid #e5e5e5;
     cursor: pointer;
 }
+
 .arrivals__all {
     width: 345px;
     height: 75px;
@@ -250,6 +252,7 @@
     text-align: center;
     vertical-align: center;
 }
+
 .arrivals__all p {
     font-size: 24px;
     letter-spacing: 1px;
@@ -269,12 +272,14 @@
     width: 220px;
     height: 100px;
 }
-.slider__plus{
+
+.slider__plus {
     position: absolute;
-    top: calc( 50% - 12px /2);
-    right: calc( 50% - 12px /2);
+    top: calc(50% - 12px / 2);
+    right: calc(50% - 12px / 2);
     z-index: 200;
 }
+
 h1 {
     font-size: 40px;
     letter-spacing: 1px;
@@ -284,25 +289,29 @@ h1 {
     font-weight: 700;
     text-align: center;
 }
-#arrivals__cards{
+
+#arrivals__cards {
     display: flex;
     justify-content: space-around;
 }
 
-.arrivals__cards{
+.arrivals__cards {
     width: 240px;
     height: 450px;
     position: relative;
 }
-.arrivals__cards img{
+
+.arrivals__cards img {
     height: 290px;
 
 }
+
 .arrivals__cards p:nth-child(2) {
     margin: 50px 0 24px 0;
     font-weight: 700;
 }
-.arrivals__cards p{
+
+.arrivals__cards p {
     width: 240px;
     margin: 0;
     font-size: 14px;
@@ -313,28 +322,34 @@ h1 {
     text-align: center;
 
 }
-.arrivals h1{
+
+.arrivals h1 {
     margin: 100px auto 70px;
 }
+
 @media (min-width: 769px) and (max-width: 1024px) {
-    .arrivals__cards:nth-child(1){
+    .arrivals__cards:nth-child(1) {
         display: none;
     }
-    .arrivals__cards{
+
+    .arrivals__cards {
         width: 210px;
         height: 385px;
         position: relative;
         margin: 0 auto 65px;
     }
-    .arrivals__cards img{
+
+    .arrivals__cards img {
         height: 345px;
 
     }
+
     .arrivals__cards p:nth-child(2) {
         margin: 35px 0 24px 0;
         font-weight: 700;
     }
-    .arrivals__cards p{
+
+    .arrivals__cards p {
         width: 210px;
         margin: 0;
         font-size: 14px;
@@ -346,7 +361,7 @@ h1 {
 
     }
 
-    #discountedPrice:before{
+    #discountedPrice:before {
         content: '';
         height: 14px;
         width: 14px;
@@ -358,6 +373,7 @@ h1 {
         left: -100px;
         transition: .5s;
     }
+
     .slider__bag-wrapper {
         display: flex;
         justify-content: center;
@@ -377,6 +393,7 @@ h1 {
         border: 1px solid #e5e5e5;
         cursor: pointer;
     }
+
     .arrivals__all--mobile-table-show {
         display: block;
         position: unset;
@@ -490,7 +507,7 @@ h1 {
 
     }
 
-     h1 {
+    h1 {
         font-size: 40px;
         letter-spacing: 1px;
         line-height: 65px;
@@ -514,24 +531,28 @@ h1 {
 }
 
 @media (max-width: 768px) {
-    .arrivals__cards:nth-child(1), .arrivals__cards:nth-child(4){
+    .arrivals__cards:nth-child(1), .arrivals__cards:nth-child(4) {
         display: none;
     }
-    .arrivals__cards{
+
+    .arrivals__cards {
         width: 170px;
         height: 295px;
         position: relative;
-        margin: 0 auto 155px;
+        margin: 0 auto 75px;
     }
-    .arrivals__cards img{
+
+    .arrivals__cards img {
         height: 225px;
 
     }
+
     .arrivals__cards p:nth-child(2) {
         margin: 30px 0 24px 0;
         font-weight: 700;
     }
-    .arrivals__cards p{
+
+    .arrivals__cards p {
         width: 170px;
         margin: 0;
         font-size: 12px;
@@ -542,6 +563,7 @@ h1 {
         text-align: center;
 
     }
+
     h1 {
         font-size: 40px;
         letter-spacing: 1px;
@@ -551,7 +573,8 @@ h1 {
         font-weight: 700;
         text-align: center;
     }
-    #discountedPrice:before{
+
+    #discountedPrice:before {
         content: '';
         height: 14px;
         width: 14px;
@@ -563,12 +586,14 @@ h1 {
         left: -40px;
         transition: .5s;
     }
+
     .slider__equal-wrapper {
         position: relative;
         margin: 20px auto 0;
         width: 220px;
         height: 125px;
     }
+
     .slider__line-not {
         top: 10%;
         left: 33%;
@@ -601,6 +626,7 @@ h1 {
         border: 1px solid #e5e5e5;
         cursor: pointer;
     }
+
     .arrivals__all--mobile-table-show {
         display: block;
         position: unset;
@@ -608,11 +634,14 @@ h1 {
         height: 75px;
         border: 1px solid #e5e5e5;
         cursor: pointer;
+        margin: 0;
     }
+
     .slider__bag p {
         font-size: 20px;
         margin-top: 25px;
     }
+
     .arrivals__all p {
         font-size: 20px;
         margin-top: 25px;
