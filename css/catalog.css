@@ -1,0 +1,8 @@
+@import "style.css";
+
+input{
+    display: none;
+}
+.filter__list{
+    /*display: none;*/
+}
