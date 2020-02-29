@@ -9,127 +9,332 @@
 </head>
 <body>
 <header>
-   <div class = "container">
+   <nav>
+      <div class = "container">
+         <div class = "header__item">
+            <div class = "header__item-wrapper header__item-wrapper--border">
 
-      <div class = "header__item">
-         <div class = "header__item-wrapper header__item-wrapper--border">
-
-            <div class = "header__log
+               <div class = "header__log
                           header__log--hide_mobile" title = "logo"><span>Template</span></div>
-            <div class = "header__log
+               <div class = "header__log
                           header__log--hide_desktop" title = "logo"><span>TL</span></div>
 
-            <div class = "header__communication">
+               <div class = "header__communication">
 
-               <div class = "header__sign-up
+                  <div class = "header__sign-up
                              header__sign-up--hide_mobile">
-                  <a href = "#"><p>E-mail sign up</p></a>
+                     <a href = "#"><p>E-mail sign up</p></a>
+                  </div>
+                  <div class = "header__bag">
+                     <img alt = "bag" src = "img/icons/ico_bag.png" title = "bag">
+                     <a>Bag(<span class = "bag_number">0</span>)</a>
+                  </div>
+
                </div>
-               <div class = "header__bag">
-                  <img alt = "bag" src = "img/icons/ico_bag.png" title = "bag">
-                  <a>Bag(<span class = "bag_number">0</span>)</a>
+
+            </div>
+            <div class = "header__menu header__menu--hide_desktop">
+               <div class = "header__menu-icon-wrapper">
+                  <div class = "header__menu-icon"></div>
                </div>
 
             </div>
-
-         </div>
-         <div class = "header__menu header__menu--hide_desktop">
-            <div class = "header__menu-icon-wrapper">
-               <div class = "header__menu-icon"></div>
-            </div>
-
-         </div>
-         <div class = "header__menu-item header__menu--hide_desktop">
-            <ul>
-               <li><a class = "menu__item" href = "#">Women</a></li>
-               <li><a class = "menu__item" href = "#">Men</a></li>
-               <li><a class = "menu__item" href = "#">Handbags</a></li>
-               <li><a class = "menu__item" href = "#">Accessories</a></li>
-               <li><a class = "menu__item" href = "#">New Arrivals</a></li>
-               <li><a class = "menu__item" href = "#">Clearance</a></li>
-               <li><a class = "menu__item" href = "#">Store Locator</a></li>
-            </ul>
-            <div class = "header__loupe-mobile">
-               <form action = "#">
-
-                  <input id = "check-loupe-mobile" type = "checkbox">
-                  <label for = "check-loupe-mobile"><img alt = "loupe" class = "loupe" src = "img/icons/ico_loupe.png"
-                                                         title = "loupe"></label>
-                  <input id = "loupe-mobile" placeholder = "Style Name" type = "text">
-               </form>
-            </div>
-
-         </div>
-      </div>
-
-      <div class = "header__item">
-         <div class = "header__looking">
-            <div class = "header__search">
-
-               <ul class = "header__list header__list--hide_mobile">
-                  <li><a href = "#" title = "Women ">Women</a></li>
-                  <li><a href = "#" title = "Men">Men</a></li>
-                  <li><a href = "#" title = " Handbags">Handbags</a></li>
-                  <li><a href = "#" title = "Accessories">Accessories</a></li>
-                  <li><a href = "#" title = "Sale">Sale</a></li>
-                  <li><a href = "#" title = "New Arrivals">New Arrivals</a></li>
-                  <li><a href = "#" title = "Clearance">Clearance</a></li>
-                  <li><a href = "#" title = "Store Locator">Store Locator</a></li>
+            <div class = "header__menu-item header__menu--hide_desktop">
+               <ul>
+                  <li><a class = "menu__item" href = "#">Women</a></li>
+                  <li><a class = "menu__item" href = "#">Men</a></li>
+                  <li><a class = "menu__item" href = "#">Handbags</a></li>
+                  <li><a class = "menu__item" href = "#">Accessories</a></li>
+                  <li><a class = "menu__item" href = "#">New Arrivals</a></li>
+                  <li><a class = "menu__item" href = "#">Clearance</a></li>
+                  <li><a class = "menu__item" href = "#">Store Locator</a></li>
                </ul>
+               <div class = "header__loupe-mobile">
+                  <form action = "#">
+
+                     <input id = "check-loupe-mobile" type = "checkbox">
+                     <label for = "check-loupe-mobile"><img alt = "loupe" class = "loupe"
+                                                            src = "img/icons/ico_loupe.png"
+                                                            title = "loupe"></label>
+                     <input id = "loupe-mobile" placeholder = "Style Name" type = "text">
+                  </form>
+               </div>
 
             </div>
+         </div>
+         <div class = "header__item">
+            <div class = "header__looking">
+               <div class = "header__search">
+                  <ul class = "header__list header__list--hide_mobile">
+                     <li><a href = "#" title = "Women ">Women</a></li>
+                     <li><a href = "#" title = "Men">Men</a></li>
+                     <li><a href = "#" title = " Handbags">Handbags</a></li>
+                     <li><a href = "#" title = "Accessories">Accessories</a></li>
+                     <li><a href = "#" title = "Sale">Sale</a></li>
+                     <li><a href = "#" title = "New Arrivals">New Arrivals</a></li>
+                     <li><a href = "#" title = "Clearance">Clearance</a></li>
+                     <li><a href = "#" title = "Store Locator">Store Locator</a></li>
+                  </ul>
+               </div>
+               <div class = "header__loupe header__loupe--hide_mobile">
+                  <form action = "#">
+                     <input id = "check-loupe" type = "checkbox">
+                     <label for = "check-loupe"><img alt = "loupe" class = "loupe" src = "img/icons/ico_loupe.png"
+                                                     title = "loupe"></label>
+                     <input id = "loupe" placeholder = "Style Name" type = "text">
+                  </form>
 
-            <div class = "header__loupe header__loupe--hide_mobile">
-               <form action = "#">
-
-                  <input id = "check-loupe" type = "checkbox">
-                  <label for = "check-loupe"><img alt = "loupe" class = "loupe" src = "img/icons/ico_loupe.png"
-                                                  title = "loupe"></label>
-                  <input id = "loupe" placeholder = "Style Name" type = "text">
-               </form>
+               </div>
 
             </div>
-
          </div>
       </div>
-
-   </div>
+   </nav>
    <hr>
 </header>
 <main>
-   <div class="filter">
-      <div class="container">
-         <div id="fashion">
-            <div class="filter__category">
-               <p>Fashion</p>
+   <div class = "filter">
+      <div class = "container">
+         <div class = "filter__wrapper ">
+
+            <div class = "filter__item fashion">
+               <div class = "filter__item-section">
+
+                  <div class = "item__header">
+                     <p class = "item__category">Fashion</p>
+                     <p class = "item__name"></p>
+                  </div>
+
+                  <div class = "item__list list__fashion">
+
+                     <ul>
+                        <li>
+                           <label class = "fashion_label" for = "fashion_1"> Not selected</label>
+                           <input alt = "Not selected" checked id = "fashion_1" name = "fashion_radio" type = "radio">
+                        </li>
+                        <li>
+                           <label for = "fashion_2">Nail the 90s</label>
+                           <input alt = "Nail the 90s " id = "fashion_2" name = "fashion_radio" type = "radio"></li>
+                        <li>
+                           <label for = "fashion_3">Casual style</label>
+                           <input alt = " Casual style" id = "fashion_3" name = "fashion_radio" type = "radio"></li>
+                        <li>
+                           <label for = "fashion_4">New look</label>
+                           <input alt = "New look " id = "fashion_4" name = "fashion_radio" type = "radio"></li>
+                        <li>
+                           <label for = "fashion_5">Sport</label>
+                           <input alt = "Sport " id = "fashion_5" name = "fashion_radio" type = "radio"></li>
+                        <li>
+                           <label for = "fashion_6">Vintage</label>
+                           <input alt = " Vintage" id = "fashion_6" name = "fashion_radio" type = "radio"></li>
+                        <li>
+                           <label for = "fashion_7">Classical style</label>
+                           <input alt = " Classical style" id = "fashion_7" name = "fashion_radio" type = "radio"></li>
+                     </ul>
+
+                  </div>
+
+               </div>
             </div>
-            <div class="filter__list">
-               <ul>
-                  <li>
-                     <label for = "1">Test 1</label>
-                     <input name="radio" id="1" type = "radio" alt=" "> </li>
-                  <li>
-                     <label for = "2">Test 1</label>
-                     <input name="radio" id="2" type = "radio" alt=" "> </li>
-                  <li>
-                     <label for = "3">Test 1</label>
-                     <input name="radio" id="3" type = "radio" alt=" "> </li>
-                  <li>
-                     <label for = "4">Test 1</label>
-                     <input name="radio" id="4" type = "radio" alt=" "> </li>
-                  <li>
-                     <label for = "5">Test 1</label>
-                     <input name="radio" id="5" type = "radio" alt=" "> </li>
-                  <li>
-                     <label for = "6">Test 1</label>
-                     <input name="radio" id="6" type = "radio" alt=" "> </li>
-                  <li>
-                     <label for = "7">Test 1</label>
-                     <input name="radio" id="7" type = "radio" alt=" "> </li>
-               </ul>
+
+            <div class = "filter__item product">
+               <div class = "filter__item-section">
+
+                  <div class = "item__header">
+                     <p class = "item__category">Product</p>
+                     <p class = "item__name "></p>
+                  </div>
+
+                  <div class = "item__list list__product">
+
+                     <ul>
+                        <li>
+                           <label class = "fashion_label" for = "product_1"> Not selected</label>
+                           <input alt = "Not selected" checked id = "product_1" name = "product_radio" type = "radio">
+                        </li>
+                        <li>
+                           <label for = "product_2">Nail the 90s</label>
+                           <input alt = "Nail the 90s " id = "product_2" name = "product_radio" type = "radio"></li>
+                        <li>
+                           <label for = "product_3">Casual style</label>
+                           <input alt = " Casual style" id = "product_3" name = "product_radio" type = "radio"></li>
+                        <li>
+                           <label for = "product_4">New look</label>
+                           <input alt = "New look " id = "product_4" name = "product_radio" type = "radio"></li>
+                        <li>
+                           <label for = "product_5">Sport</label>
+                           <input alt = "Sport " id = "product_5" name = "product_radio" type = "radio"></li>
+                        <li>
+                           <label for = "product_6">Vintage</label>
+                           <input alt = " Vintage" id = "product_6" name = "product_radio" type = "radio"></li>
+                        <li>
+                           <label for = "product_7">Classical style</label>
+                           <input alt = " Classical style" id = "product_7" name = "product_radio" type = "radio"></li>
+                     </ul>
+
+                  </div>
+
+               </div>
+            </div>
+
+            <div class = "filter__item color">
+               <div class = "filter__item-section">
+
+                  <div class = "item__header">
+                     <p class = "item__category">Color</p>
+                     <p class = "item__name"></p>
+                  </div>
+
+                  <div class = "item__list list__color">
+
+                     <ul>
+                        <li>
+                           <label class = "fashion_label" for = "color_1"> Not selected</label>
+                           <input alt = "Not selected" checked id = "color_1" name = "color_radio" type = "radio"></li>
+                        <li>
+                           <label for = "color_2">Nail the 90s</label>
+                           <input alt = "Nail the 90s " id = "color_2" name = "color_radio" type = "radio"></li>
+                        <li>
+                           <label for = "color_3">Casual style</label>
+                           <input alt = " Casual style" id = "color_3" name = "color_radio" type = "radio"></li>
+                        <li>
+                           <label for = "color_4">New look</label>
+                           <input alt = "New look " id = "color_4" name = "color_radio" type = "radio"></li>
+                        <li>
+                           <label for = "color_5">Sport</label>
+                           <input alt = "Sport " id = "color_5" name = "color_radio" type = "radio"></li>
+                        <li>
+                           <label for = "color_6">Vintage</label>
+                           <input alt = " Vintage" id = "color_6" name = "color_radio" type = "radio"></li>
+                        <li>
+                           <label for = "color_7">Classical style</label>
+                           <input alt = " Classical style" id = "color_7" name = "color_radio" type = "radio"></li>
+                     </ul>
+
+                  </div>
+
+               </div>
+            </div>
+
+            <div class = "filter__item brand">
+               <div class = "filter__item-section">
+
+                  <div class = "item__header">
+                     <p class = "item__category">Brand</p>
+                     <p class = "item__name"></p>
+                  </div>
+
+                  <div class = "item__list list__brand">
+
+                     <ul>
+                        <li>
+                           <label class = "fashion_label" for = "brand_1"> Not selected</label>
+                           <input alt = "Not selected" checked id = "brand_1" name = "brand_radio" type = "radio"></li>
+                        <li>
+                           <label for = "brand_2">Nail the 90s</label>
+                           <input alt = "Nail the 90s " id = "brand_2" name = "brand_radio" type = "radio"></li>
+                        <li>
+                           <label for = "brand_3">Casual style</label>
+                           <input alt = " Casual style" id = "brand_3" name = "brand_radio" type = "radio"></li>
+                        <li>
+                           <label for = "brand_4">New look</label>
+                           <input alt = "New look " id = "brand_4" name = "brand_radio" type = "radio"></li>
+                        <li>
+                           <label for = "brand_5">Sport</label>
+                           <input alt = "Sport " id = "brand_5" name = "brand_radio" type = "radio"></li>
+                        <li>
+                           <label for = "brand_6">Vintage</label>
+                           <input alt = " Vintage" id = "brand_6" name = "brand_radio" type = "radio"></li>
+                        <li>
+                           <label for = "brand_7">Classical style</label>
+                           <input alt = " Classical style" id = "brand_7" name = "brand_radio" type = "radio"></li>
+                     </ul>
+
+                  </div>
+
+               </div>
+            </div>
+
+            <div class = "filter__item size">
+               <div class = "filter__item-section">
+
+                  <div class = "item__header">
+                     <p class = "item__category">Size</p>
+                     <p class = "item__name"></p>
+                  </div>
+
+                  <div class = "item__list list__size">
+
+                     <ul>
+                        <li>
+                           <label class = "fashion_label" for = "size_1"> Not selected</label>
+                           <input alt = "Not selected" checked id = "size_1" name = "size_radio" type = "radio"></li>
+                        <li>
+                           <label for = "size_2">Nail the 90s</label>
+                           <input alt = "Nail the 90s " id = "size_2" name = "size_radio" type = "radio"></li>
+                        <li>
+                           <label for = "size_3">Casual style</label>
+                           <input alt = " Casual style" id = "size_3" name = "size_radio" type = "radio"></li>
+                        <li>
+                           <label for = "size_4">New look</label>
+                           <input alt = "New look " id = "size_4" name = "size_radio" type = "radio"></li>
+                        <li>
+                           <label for = "size_5">Sport</label>
+                           <input alt = "Sport " id = "size_5" name = "size_radio" type = "radio"></li>
+                        <li>
+                           <label for = "size_6">Vintage</label>
+                           <input alt = " Vintage" id = "size_6" name = "size_radio" type = "radio"></li>
+                        <li>
+                           <label for = "size_7">Classical style</label>
+                           <input alt = " Classical style" id = "size_7" name = "size_radio" type = "radio"></li>
+                     </ul>
+
+                  </div>
+
+               </div>
+            </div>
+
+            <div class = "filter__item price">
+               <div class = "filter__item-section">
+
+                  <div class = "item__header">
+                     <p class = "item__category">Price</p>
+                     <p class = "item__name"></p>
+                  </div>
+
+                  <div class = "item__list list__price">
+
+                     <ul>
+                        <li>
+                           <label class = "fashion_label" for = "price_1"> Not selected</label>
+                           <input alt = "Not selected" checked id = "price_1" name = "price_radio" type = "radio"></li>
+                        <li>
+                           <label for = "price_2">Nail the 90s</label>
+                           <input alt = "Nail the 90s " id = "price_2" name = "price_radio" type = "radio"></li>
+                        <li>
+                           <label for = "price_3">Casual style</label>
+                           <input alt = " Casual style" id = "price_3" name = "price_radio" type = "radio"></li>
+                        <li>
+                           <label for = "price_4">New look</label>
+                           <input alt = "New look " id = "price_4" name = "price_radio" type = "radio"></li>
+                        <li>
+                           <label for = "price_5">Sport</label>
+                           <input alt = "Sport " id = "price_5" name = "price_radio" type = "radio"></li>
+                        <li>
+                           <label for = "price_6">Vintage</label>
+                           <input alt = " Vintage" id = "price_6" name = "price_radio" type = "radio"></li>
+                        <li>
+                           <label for = "price_7">Classical style</label>
+                           <input alt = " Classical style" id = "price_7" name = "price_radio" type = "radio"></li>
+                     </ul>
+
+                  </div>
+
+               </div>
             </div>
          </div>
       </div>
+      <hr>
    </div>
 </main>
 <footer>

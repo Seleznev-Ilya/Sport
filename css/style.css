@@ -73,5 +73,12 @@ a {
     font-family: "Roboto";
     font-weight: 400;
 }
+*::selection{
+    background: transparent;
+}
+
+*::-moz-selection{
+    background: transparent;
+}
 
 
