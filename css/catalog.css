@@ -92,8 +92,11 @@
     display: none;
 }
 @media (min-width: 769px) and (max-width: 1024px) {
-    .item__list label:active{
+    .item__list .label--active{
         color: #f14a58;
+    }
+    .item__list .label--active-not{
+        color: black;
     }
     .filter__item-section{
         height: 0;
@@ -203,5 +206,103 @@
     .filter__item{
         margin: 0 auto;
         width: 50%;
+    }
+    .item__list .label--active{
+        color: #f14a58;
+    }
+    .item__list .label--active-not{
+        color: black;
+    }
+    .filter__item-section{
+        height: 0;
+    }
+    .filter__arrow{
+        display: none;
+    }
+    .filter__wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        position: absolute;
+        left: 20px;
+        top: 150px;
+
+    }
+    .filter__wrapper--out-table-mobile{
+        position: relative;
+
+    }
+    .filter__item:hover{
+        border: 0;
+    }
+    .filter__item{
+        border: 0;
+        margin: 0;
+        color: white;
+        min-height: 270px;
+        padding: 0;
+    }
+    .item__list{
+        border: 0;
+        padding-left: 20px;
+        position: unset;
+        transition: .25s;
+        opacity:1;
+        transform: scaleY(1);
+        display: block;
+    }
+    .item__header{
+        display: none;
+    }
+    .item__category--table-mobile{
+        display: block;
+        transition: .2s ease-in-out;
+        position: absolute;
+        left: 20px;
+        top: -20px;
+        margin: 0;
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: #000000;
+        font-family: "Open Sans";
+        font-weight: 700;
+    }
+    /*_____________________*/
+    .item__list label {
+        cursor: pointer;
+        font-size: 14px;
+        letter-spacing: 0px;
+        line-height: 25px;
+        color: #a8a8a8;
+        font-family: "Open Sans";
+        font-weight: 700;
+    }
+
+    .item__list label:hover {
+        color: #f14a58;
+    }
+
+    .item__list li:hover:before {
+        color: #f14a58;
+    }
+
+    .item__list ul {
+        list-style: none;
+        padding-left: 20px;
+    }
+    .item__list li {
+        /*box-sizing: content-box;*/
+    }
+
+    .item__list li::before {
+        line-height: 25px;
+        content: "\2022";
+        color: #a8a8a8;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
     }
 }
