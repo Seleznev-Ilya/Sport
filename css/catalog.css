@@ -232,7 +232,7 @@
         top: 71px;
         background-color: white;
         z-index: 50;
-        padding-right: 40px;
+        /*padding-right: 40px;*/
     }
 
     .filter__wrapper.filter__wrapper-show {
@@ -404,6 +404,11 @@
         display: flex;
         justify-content: start;
         min-width: 500px;
+    }
+
+    .filter__container {
+        width: 100%;
+        overflow: hidden;
     }
 
     .filter__check-list {
