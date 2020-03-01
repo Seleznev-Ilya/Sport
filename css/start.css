@@ -326,7 +326,12 @@ h1 {
 .arrivals h1 {
     margin: 100px auto 70px;
 }
+.slider__bag:hover, .arrivals__all:hover{
+    border: 1px solid #d14b58;
+}.slider__bag:hover p, .arrivals__all:hover p{
+    color: #d14b58;
 
+}
 @media (min-width: 769px) and (max-width: 1024px) {
     .arrivals__cards:nth-child(1) {
         display: none;

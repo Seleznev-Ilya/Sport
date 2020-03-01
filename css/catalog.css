@@ -108,14 +108,89 @@
 .check-wrapper__item span{
     color: black;
 }
+/*________________________________________________________*/
+/*.filter__menu--hide_desktop {*/
+/*    display: none;*/
+/*}*/
 @media (min-width: 769px) and (max-width: 1024px) {
+    /*______________________________________________________*/
+
+    .filter__menu-img{
+        position: absolute;
+        top: calc(50% - 1px);
+        left: calc(50% + 7.5px);
+    }
+
+    .filter__check-list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .filter__menu-icon.menu-icon-active {
+        background-color: transparent;
+    }
+    .filter__menu-icon::after {
+        position: absolute;
+        left: 0;
+        top: 5px;
+        content: attr(data-el);
+        width: 25px;
+        height: 4px;
+        background-color: transparent;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+    .filter__menu-icon.menu-icon-active::after {
+        transform: rotate(-45deg);
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+        background-color: #f14a58;
+    }
+    .filter__menu-icon::before {
+        position: absolute;
+        left: 0;
+        top: -5px;
+        content: attr(data-el);
+        width: 25px;
+        height: 4px;
+        background-color: transparent;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+    .filter__menu-icon.menu-icon-active::before {
+        transform: rotate(45deg);
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+        background-color: #f14a58;
+    }
+    .filter__menu-icon {
+        position: relative;
+        width: 25px;
+        height: 4px;
+        background-color: transparent;
+    }
+    .filter__menu-icon-wrapper {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .filter__menu {
+        position: relative;
+        cursor: pointer;
+        padding: 0 0 0 20px;
+        margin: auto  0 ;
+        z-index: 70;
+    }
+
+    /*______________________________________________________*/
     .filter__check-wrapper{
         display: flex;
         justify-content: start;
     }
-    .filter__check-list{
-        display: block;
-    }
+    /*.filter__check-list{*/
+    /*    display: block;*/
+    /*}*/
     .item__list .label--active{
         color: #f14a58;
     }
@@ -128,8 +203,9 @@
     .filter__arrow{
         display: none;
     }
+
     .filter__wrapper{
-        display: flex;
+        display: none;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -139,7 +215,10 @@
         top: 71px;
         background-color: white;
         z-index: 50;
+    }
 
+    .filter__wrapper.filter__wrapper-show{
+        display: flex;
     }
     .filter__wrapper--out-table-mobile{
         position: relative;

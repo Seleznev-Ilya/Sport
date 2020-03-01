@@ -37,7 +37,6 @@
                <div class = "header__menu-icon-wrapper">
                   <div class = "header__menu-icon"></div>
                </div>
-
             </div>
             <div class = "header__menu-item header__menu--hide_desktop">
                <ul>
@@ -96,17 +95,23 @@
    <div class = "filter">
       <div class = "container">
          <div class = "filter__wrapper--table-mobile">
-            <div class="filter__check-list">
-               <div class="filter__check-wrapper">
-                  <p class="check-wrapper__item check-wrapper__fashion"> Fashion&nbsp;</p>
-                  <p class="check-wrapper__item check-wrapper__product"> Product&nbsp;</p>
-                  <p class="check-wrapper__item check-wrapper__color"> Color&nbsp;</p>
-                  <p class="check-wrapper__item check-wrapper__brand"> Brand&nbsp;</p>
-                  <p class="check-wrapper__item check-wrapper__size"> Size&nbsp;</p>
-                  <p class="check-wrapper__item check-wrapper__price"> Price</p>
+            <div class = "filter__check-list">
+               <div class = "filter__check-wrapper">
+                  <p class = "check-wrapper__item check-wrapper__fashion"> Fashion&nbsp;</p>
+                  <p class = "check-wrapper__item check-wrapper__product"> Product&nbsp;</p>
+                  <p class = "check-wrapper__item check-wrapper__color"> Color&nbsp;</p>
+                  <p class = "check-wrapper__item check-wrapper__brand"> Brand&nbsp;</p>
+                  <p class = "check-wrapper__item check-wrapper__size"> Size&nbsp;</p>
+                  <p class = "check-wrapper__item check-wrapper__price"> Price</p>
+               </div>
+               <div class = "filter__menu filter__menu--hide_desktop">
+                  <img class="filter__menu-img " src = "img/icons/ico_min.png" alt = "arrow">
+                  <div class = "filter__menu-icon-wrapper">
+                     <div class = "filter__menu-icon"></div>
+                  </div>
                </div>
             </div>
-         <div class = "filter__wrapper ">
+            <div class = "filter__wrapper">
 
                <div class = "filter__item fashion">
                   <div class = "filter__item-section">
@@ -122,7 +127,7 @@
                         <ul>
                            <li>
                               <label class = "fashion_label" for = "fashion_1"> Not selected</label>
-                              <input alt = "Not selected"   id = "fashion_1" name = "fashion_radio"
+                              <input alt = "Not selected" id = "fashion_1" name = "fashion_radio"
                                      type = "radio">
                            </li>
                            <li>
@@ -154,7 +159,7 @@
                <div class = "filter__item product">
                   <div class = "filter__item-section">
                      <img alt = "arrow" class = "filter__arrow" src = "img/icons/ico_min.png">
-                     <p class = "item__category--table-mobile">Fashion</p>
+                     <p class = "item__category--table-mobile">Product</p>
 
                      <div class = "item__header">
                         <p class = "item__category">Product</p>
@@ -166,12 +171,13 @@
                         <ul>
                            <li>
                               <label class = "fashion_label" for = "product_1"> Not selected</label>
-                              <input alt = "Not selected"   id = "product_1" name = "product_radio"
+                              <input alt = "Not selected" id = "product_1" name = "product_radio"
                                      type = "radio">
                            </li>
                            <li>
                               <label for = "product_2">Coats & Jackets</label>
-                              <input alt = "Coats & Jackets" id = "product_2" name = "product_radio" type = "radio"></li>
+                              <input alt = "Coats & Jackets" id = "product_2" name = "product_radio" type = "radio">
+                           </li>
                            <li>
                               <label for = "product_3">Dresses</label>
                               <input alt = "Dresses" id = "product_3" name = "product_radio" type = "radio"></li>
@@ -188,7 +194,7 @@
                <div class = "filter__item color">
                   <div class = "filter__item-section">
                      <img alt = "arrow" class = "filter__arrow" src = "img/icons/ico_min.png">
-                     <p class = "item__category--table-mobile">Fashion</p>
+                     <p class = "item__category--table-mobile">Color</p>
 
                      <div class = "item__header">
                         <p class = "item__category">Color</p>
@@ -200,7 +206,7 @@
                         <ul>
                            <li>
                               <label class = "fashion_label" for = "color_1"> Not selected</label>
-                              <input alt = "Not selected"   id = "color_1" name = "color_radio" type = "radio">
+                              <input alt = "Not selected" id = "color_1" name = "color_radio" type = "radio">
                            </li>
                            <li>
                               <label for = "color_2">Black</label>
@@ -227,7 +233,7 @@
                <div class = "filter__item brand">
                   <div class = "filter__item-section">
                      <img alt = "arrow" class = "filter__arrow" src = "img/icons/ico_min.png">
-                     <p class = "item__category--table-mobile">Fashion</p>
+                     <p class = "item__category--table-mobile">Brand</p>
 
                      <div class = "item__header">
                         <p class = "item__category">Brand</p>
@@ -239,7 +245,7 @@
                         <ul>
                            <li>
                               <label class = "fashion_label" for = "brand_1"> Not selected</label>
-                              <input alt = "Not selected"   id = "brand_1" name = "brand_radio" type = "radio">
+                              <input alt = "Not selected" id = "brand_1" name = "brand_radio" type = "radio">
                            </li>
                            <li>
                               <label for = "brand_2">Chi Chi London</label>
@@ -266,7 +272,7 @@
                <div class = "filter__item size">
                   <div class = "filter__item-section">
                      <img alt = "arrow" class = "filter__arrow" src = "img/icons/ico_min.png">
-                     <p class = "item__category--table-mobile">Fashion</p>
+                     <p class = "item__category--table-mobile">Size</p>
 
                      <div class = "item__header">
                         <p class = "item__category">Size</p>
@@ -278,7 +284,7 @@
                         <ul>
                            <li>
                               <label class = "fashion_label" for = "size_1"> Not selected</label>
-                              <input alt = "Not selected"   id = "size_1" name = "size_radio" type = "radio"></li>
+                              <input alt = "Not selected" id = "size_1" name = "size_radio" type = "radio"></li>
                            <li>
                               <label for = "size_2">UK 2</label>
                               <input alt = "UK 2" id = "size_2" name = "size_radio" type = "radio"></li>
@@ -313,7 +319,7 @@
                <div class = "filter__item price">
                   <div class = "filter__item-section">
                      <img alt = "arrow" class = "filter__arrow" src = "img/icons/ico_min.png">
-                     <p class = "item__category--table-mobile">Fashion</p>
+                     <p class = "item__category--table-mobile">Price</p>
 
                      <div class = "item__header">
                         <p class = "item__category">Price</p>
@@ -325,7 +331,7 @@
                         <ul>
                            <li>
                               <label class = "fashion_label" for = "price_1"> Not selected</label>
-                              <input alt = "Not selected"   id = "price_1" name = "price_radio" type = "radio">
+                              <input alt = "Not selected" id = "price_1" name = "price_radio" type = "radio">
                            </li>
                            <li>
                               <label for = "price_2">To £99</label>
