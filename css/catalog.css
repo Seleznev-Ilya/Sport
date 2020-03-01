@@ -187,6 +187,7 @@
     .filter__check-wrapper{
         display: flex;
         justify-content: start;
+        min-width: 500px;
     }
     /*.filter__check-list{*/
     /*    display: block;*/
@@ -361,17 +362,24 @@
         align-items: center;
     }
     .filter__menu {
-        position: relative;
+        position: absolute;
         cursor: pointer;
         padding: 0 0 0 20px;
-        margin: auto  0 ;
+        margin: auto 0;
         z-index: 70;
+        right: 5px;
+        top: calc(50% - 16px);
+        box-shadow: 0 5px 20px white;
+        background: radial-gradient(white 34%, transparent);
+        display: block;
+
     }
 
     /*______________________________________*/
     .filter__check-wrapper{
         display: flex;
         justify-content: start;
+        min-width: 500px;
     }
     .filter__check-list{
         display: flex;
