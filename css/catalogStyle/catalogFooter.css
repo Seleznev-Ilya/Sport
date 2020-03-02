@@ -163,6 +163,9 @@
 }
 
 @media (max-width: 768px) {
+    .da__wrapper {
+        max-height: 240px;
+    }
     .ad__adidas-description h2, .ad__patches-description h2 {
         font-size: 20px;
         letter-spacing: 1px;
