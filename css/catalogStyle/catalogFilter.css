@@ -234,13 +234,13 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        width: calc(100% + 20px);
+        width: 100%;
         position: absolute;
         left: -20px;
         top: 67px;
         background-color: white;
         z-index: 50;
-        /*padding-right: 40px;*/
+        padding-right: 40px;
     }
 
     .filter__wrapper.filter__wrapper-show {
