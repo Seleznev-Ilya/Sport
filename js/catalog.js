@@ -1,8 +1,8 @@
 'use strict';
 let menuIcon = document.querySelector('.filter__menu-icon-wrapper ');
-menuIcon.addEventListener('click', open);
+menuIcon.addEventListener('click', openFilter);
 menuIcon.addEventListener('click', hideFilter);
-function open(){
+function openFilter(){
     document.querySelector('.filter__menu-icon').classList.toggle('menu-icon-active');
     document.querySelector('.filter__menu-item').classList.toggle('filter__menu-item--mobil');
     document.querySelector('.filter__item-wrapper').classList.toggle('filter__item-wrapper--border');
@@ -10,9 +10,6 @@ function open(){
 function hideFilter(){
     document.querySelector('.filter__wrapper--table-mobile .filter__wrapper').classList.toggle('filter__wrapper-show');
 }
-
-
-
 
 let price = document.querySelector('.list__price ');
 price.addEventListener('click', f);
@@ -257,7 +254,6 @@ function f6() {
 
     }
 }
-
 
 
 

@@ -1,4 +1,4 @@
-@import "style.css";
+@import "../style.css";
 
 .filter__wrapper {
     display: flex;
@@ -14,7 +14,7 @@
 
 .item__list {
     position: absolute;
-    top: 17px;
+    top: 16px;
     right: -1px;
     margin-top: 50px;
     transition: .2s;
@@ -122,6 +122,14 @@
 .check-wrapper__item span {
     color: black;
 }
+@media (min-width: 1024px) {
+    .item__list {
+        box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+        background-color: white;
+        z-index: 60;
+    }
+
+}
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .filter__menu-img {
@@ -226,10 +234,10 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        width: 100%;
+        width: calc(100% + 20px);
         position: absolute;
         left: -20px;
-        top: 71px;
+        top: 67px;
         background-color: white;
         z-index: 50;
         /*padding-right: 40px;*/
@@ -450,10 +458,10 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        width: 100%;
+        width: 100% ;
         position: absolute;
         left: -20px;
-        top: 71px;
+        top: 67px;
         background-color: white;
         z-index: 50;
         padding-right: 40px;

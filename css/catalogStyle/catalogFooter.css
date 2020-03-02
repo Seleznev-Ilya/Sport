@@ -1,0 +1,198 @@
+@import "../style.css";
+
+.da__wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-height: 385px;
+}
+
+.ad__adidas-wrapper img, .ad__patches-wrapper img, .ad__sale-wrapper img {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+.ad__adidas-wrapper, .ad__patches-wrapper, .ad__sale-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.ad__adidas-description {
+    position: absolute;
+    top: 8%;
+    right: 9%;
+    text-align: center;
+}
+
+.ad__patches-description {
+    position: absolute;
+    bottom: 8%;
+    right: calc(50% - 107px);
+    text-align: center;
+}
+
+.ad__sale-description {
+    position: absolute;
+    bottom: 8%;
+    right: calc(50% - 33px);
+    text-align: center;
+}
+
+.ad__adidas-description h2, .ad__patches-description h2 {
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+
+.ad__sale-description h2 {
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 65px;
+    color: #f14a58;
+    font-family: "Open Sans";
+    font-weight: 700;
+    margin: 0;
+}
+
+.ad__adidas-description p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    font-family: "Times New Roman";
+    font-style: italic;
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+}
+
+.ad__patches-description p {
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 15px;
+    color: rgba(242, 241, 239, .7);
+    font-family: "Roboto";
+    font-weight: 400;
+    text-align: center;
+}
+
+.ad__sale-description p {
+    font-size: 16px;
+    color: #757575;
+    font-family: "Times New Roman";
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+}
+
+.ad__adidas-wrapper {
+    width: 50%;
+}
+
+@media (min-width: 1024px) {
+    .ad__adidas-wrapper {
+        width: 50%;
+    }
+
+    .ad__patches-wrapper {
+        width: 25%;
+    }
+
+    .ad__sale-wrapper {
+        width: 25%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .ad__adidas-description h2, .ad__patches-description h2 {
+        font-size: 22px;
+        letter-spacing: 1px;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .ad__adidas-description p {
+        font-size: 16px;
+        line-height: 26px;
+        color: rgba(242, 241, 239, .9);
+        font-family: "Times New Roman";
+        font-style: italic;
+        text-align: center;
+        margin: 0;
+    }
+
+    .ad__patches-description p {
+        font-size: 14px;
+        letter-spacing: 0px;
+        color: rgba(242, 241, 239, .7);
+        font-family: "Roboto";
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .da__wrapper {
+        max-height: 250px;
+    }
+
+    .ad__adidas-wrapper img, .ad__patches-wrapper img, .ad__sale-wrapper img {
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .ad__adidas-wrapper {
+        width: 70%;
+        background-color: #324063;
+    }
+
+    .ad__patches-wrapper {
+        width: 30%;
+        background-color: #caccce;
+    }
+
+    .ad__sale-wrapper {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .ad__adidas-description h2, .ad__patches-description h2 {
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .ad__adidas-description p {
+        font-size: 14px;
+        line-height: 26px;
+        color: rgba(242, 241, 239, .9);
+        font-family: "Times New Roman";
+        font-style: italic;
+        text-align: center;
+    }
+
+    .ad__adidas-wrapper img, .ad__patches-wrapper img, .ad__sale-wrapper img {
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .ad__adidas-wrapper {
+        width: 100%;
+        background-color: #324063;
+    }
+
+    .ad__patches-wrapper, .ad__sale-wrapper {
+        display: none;
+    }
+}
