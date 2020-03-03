@@ -281,8 +281,33 @@ let idCatalog = document.querySelector('#containerCatalog');
 for (let i = 0; i < catalogRender.length; i++) {
     counterCatalog = i;
     creatItems(); //Draw all items
+    if( i === 1 || i === 2 || i === 3){
+        writAdText(i); // Ad block
+    }
 }
+// ad => advertisement ;)
+function writAdText(a) {
+let itemTextAd = document.createElement('div');
+    itemTextAd.classList.add(`catalog__textAd${a}`);
 
+    let itemTextAdH2Wrapper = document.createElement('div');
+    itemTextAdH2Wrapper.classList.add('TextAdH2Wrapper');
+    itemTextAdH2Wrapper.classList.add('container');
+
+    let itemTextAdH2l = document.createElement('h2');
+    itemTextAdH2l.classList.add('catalog__textH2Ad');
+    itemTextAdH2l.innerText = 'Last weekend extra 50% off on all reduced boots and shoulder bags';
+
+    let itemTextAdP1 = document.createElement('p');
+    itemTextAdP1.classList.add('catalog__descriptionAd');
+    itemTextAdP1.innerText = 'This offer is valid in-store and online. Prices displayed reflect this additional discount. This offer ends at 11:59 GMT on arch 1st 2019';
+
+    itemTextAdH2Wrapper.append(itemTextAdH2l);
+    itemTextAdH2Wrapper.append(itemTextAdP1);
+    itemTextAd.append(itemTextAdH2Wrapper);
+    // itemTextAd.append(itemTextAdP1);
+    idCatalog.append(itemTextAd);
+}
 function creatItems() {
     let anchor = document.createElement('a');
     anchor.classList.add('catalog__anchor');
@@ -300,6 +325,7 @@ function creatItems() {
 
         let itemImg = document.createElement('img');
         itemImg.classList.add('catalog__img');
+        itemImg.alt = catalogRender[counterCatalog].title;
         itemImg.src = catalogRender[counterCatalog].preview[1];
 
     let itemH2 = document.createElement('h2');
@@ -308,7 +334,7 @@ function creatItems() {
 
     let pWrapper = document.createElement('div');
     pWrapper.classList.add('catalog__p-wrapper');
-    
+
         if ( catalogRender[counterCatalog].price > catalogRender[counterCatalog].discountedPrice
             &&  catalogRender[counterCatalog].price !== null ){
             let itemPOldWrapper = document.createElement('div');
@@ -327,7 +353,6 @@ function creatItems() {
             if( catalogRender[counterCatalog].discountedPrice !== null){
             itemPOldWrapper.append(lineCatalog);
                 }
-
         }
 
         if(catalogRender[counterCatalog].discountedPrice !== null){
@@ -337,9 +362,6 @@ function creatItems() {
             itemP.innerText = '£' + catalogRender[counterCatalog].discountedPrice;
             pWrapper.append(itemP);
         }
-
-
-
 
     imgWrapper.append(textImg);
     imgWrapper.append(itemImg);

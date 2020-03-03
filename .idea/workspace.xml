@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="deaf5f2a-b2b2-44b3-878c-5eec4ace805b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/catalogStyle/catalogGrid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/catalog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/page_2/adidas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/page_2/bag.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/page_2/pants.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/catalogPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/catalogStyle/catalogGrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/catalogStyle/catalogGrid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/catalogPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/catalogPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583224450552</updated>
-      <workItem from="1583224451808" duration="28814000" />
+      <workItem from="1583224451808" duration="35560000" />
     </task>
     <servers />
   </component>

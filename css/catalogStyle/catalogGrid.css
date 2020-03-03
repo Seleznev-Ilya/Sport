@@ -66,7 +66,41 @@
     top: 32px;
     left: -5px;
 }
+.catalog__textAd1, .catalog__textAd2,.catalog__textAd3{
+    width: 100%;
+}
+.TextAdH2Wrapper{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.catalog__textH2Ad{
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-align: center;
+}
+.catalog__descriptionAd{
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-style: italic;
+    text-align: center;
+}
 @media (min-width: 1024px) {
+    .catalog__textAd1, .catalog__textAd2{
+        display: none;
+    }
+    #containerCatalog .catalog__textAd:nth-child(2){
+        display: none;
+    }
+    #containerCatalog .catalog__textAd:nth-child(3){
+        display: none;
+    }
     .catalog__item {
         width: 25%;
         box-sizing: border-box;
@@ -108,6 +142,26 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+    .catalog__textH2Ad{
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 34px;
+        color: #000000;
+        font-family: "Open Sans";
+        font-weight: 700;
+        text-align: center;
+    }
+    .catalog__descriptionAd{
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+        font-family: "Times New Roman";
+        font-style: italic;
+        text-align: center;
+    }
+    .catalog__textAd1, .catalog__textAd3{
+        display: none;
+    }
     .catalog__item {
         width: 33%;
         box-sizing: border-box;
@@ -148,6 +202,26 @@
 }
 
 @media (max-width: 768px) {
+    .catalog__textH2Ad{
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        color: #000000;
+        font-family: "Open Sans";
+        font-weight: 700;
+        text-align: center;
+    }
+    .catalog__descriptionAd{
+        font-size: 14px;
+        line-height: 28px;
+        color: #000000;
+        font-family: "Times New Roman";
+        font-style: italic;
+        text-align: center;
+    }
+    .catalog__textAd3, .catalog__textAd2{
+        display: none;
+    }
     .catalog__item {
         box-sizing: border-box;
         padding: 10px 0 0;
