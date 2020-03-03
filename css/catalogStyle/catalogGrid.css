@@ -1,0 +1,202 @@
+@import "../style.css";
+
+#containerCatalog {
+    margin-top: 55px;
+    margin-bottom: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.catalog__anchor{
+    margin: 0 auto 45px;
+    width: 200px;
+    height: 290px;
+    display: block;
+}
+.catalog__text-Img{
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 65px;
+    color: #f14a58;
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-align: center;
+}
+.catalog__h2{
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #000000;
+    font-family: "Roboto";
+    font-weight: 700;
+    text-align: center;
+}
+.catalog__item:hover .catalog__h2{
+    color: #f14a58;
+}
+.catalog__p-wrapper{
+    max-width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.catalog__price{
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 65px;
+    color: #000000;
+    font-family: "Roboto";
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+.p-wrapper__price{
+    position: relative;
+    margin-right: 10px;
+}
+.catalog__lineHr{
+    background-color: red;
+    height: 1px;
+    width: 45px;
+    transform: rotate(-28deg);
+    border: 0;
+    position: absolute;
+    top: 32px;
+    left: -5px;
+}
+@media (min-width: 1024px) {
+    .catalog__item {
+        width: 25%;
+        box-sizing: border-box;
+        padding: 10px 0 0;
+    }
+
+    .catalog__img-wrapper {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 0 auto 50px;
+    }
+
+    .catalog__text-Img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        width: 200px;
+        height: 290px;
+        margin: 0;
+    }
+    .catalog__item:hover .catalog__text-Img {
+        display: block;
+        text-align: center;
+        line-height: 290px;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .catalog__img {
+        width: 100%;
+        height: 290px;
+    }
+    .catalog__h2{
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .catalog__item {
+        width: 33%;
+        box-sizing: border-box;
+        padding: 10px 0 0;
+    }
+    .catalog__img-wrapper {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .catalog__text-Img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        width: 200px;
+        height: 290px;
+        margin: 0;
+    }
+    .catalog__item:hover .catalog__text-Img {
+        display: block;
+        text-align: center;
+        line-height: 290px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .catalog__img {
+        width: 100%;
+        height: 290px;
+    }
+    .catalog__h2 {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog__item {
+        box-sizing: border-box;
+        padding: 10px 0 0;
+        width: 50%;
+
+    }
+    .catalog__img-wrapper {
+        width: 160px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .catalog__text-Img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        width: 160px;
+        height: 225px;
+        margin: 0;
+    }
+    .catalog__item:hover .catalog__text-Img {
+        display: block;
+        text-align: center;
+        line-height: 225px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .catalog__img {
+        width: 100%;
+        height: 225px;
+    }
+    .catalog__anchor{
+        margin: 0 auto 35px;
+        width: 160px;
+        height: 225px;
+        display: block;
+    }
+    .catalog__h2{
+        max-width: 160px;
+        font-size: 12px;
+        letter-spacing: 0px;
+        line-height: 24px;
+        color: #000000;
+        font-family: "Roboto";
+        font-weight: 700;
+        text-align: center;
+        margin: 0 auto;
+    }
+}

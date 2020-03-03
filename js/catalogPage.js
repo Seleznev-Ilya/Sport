@@ -2,12 +2,14 @@
 let menuIcon = document.querySelector('.filter__menu-icon-wrapper ');
 menuIcon.addEventListener('click', openFilter);
 menuIcon.addEventListener('click', hideFilter);
-function openFilter(){
+
+function openFilter() {
     document.querySelector('.filter__menu-icon').classList.toggle('menu-icon-active');
     document.querySelector('.filter__menu-item').classList.toggle('filter__menu-item--mobil');
     document.querySelector('.filter__item-wrapper').classList.toggle('filter__item-wrapper--border');
 }
-function hideFilter(){
+
+function hideFilter() {
     document.querySelector('.filter__wrapper--table-mobile .filter__wrapper').classList.toggle('filter__wrapper-show');
 }
 
@@ -16,10 +18,10 @@ price.addEventListener('click', f);
 
 function f() {
     let inputPrice = document.querySelector('.price input[type=radio]:checked');
-    if( inputPrice.alt !== 'Not selected' ){
-        inputPrice.previousElementSibling.classList.toggle( 'label--active');
+    if (inputPrice.alt !== 'Not selected') {
+        inputPrice.previousElementSibling.classList.toggle('label--active');
         document.querySelector('.price .item__name').innerText = inputPrice.alt;
-        document.querySelector('.check-wrapper__price').innerText = `, ${inputPrice.alt}` ;
+        document.querySelector('.check-wrapper__price').innerText = `, ${inputPrice.alt}`;
         document.querySelector('.check-wrapper__price').style.color = '#f14a58';
         let item = document.querySelector('.price .filter__item-section');
         item.style.backgroundColor = '#f7f7f7';
@@ -36,8 +38,8 @@ function f() {
         category.style.fontSize = 12 + 'px';
 
     } else {
-        if(inputPrice.alt === 'Not selected'){
-            inputPrice.previousElementSibling.classList.toggle( 'label--active-not');
+        if (inputPrice.alt === 'Not selected') {
+            inputPrice.previousElementSibling.classList.toggle('label--active-not');
             document.querySelector('.check-wrapper__price').innerText = `, Price`;
             document.querySelector('.check-wrapper__price').style.color = 'black';
         }
@@ -59,11 +61,11 @@ size.addEventListener('click', f2);
 
 function f2() {
     let inputPrice = document.querySelector('.size input[type=radio]:checked');
-    if( inputPrice.alt !== 'Not selected' ){
-        inputPrice.previousElementSibling.classList.toggle( 'label--active');
+    if (inputPrice.alt !== 'Not selected') {
+        inputPrice.previousElementSibling.classList.toggle('label--active');
 
         document.querySelector('.size .item__name').innerText = inputPrice.alt;
-        document.querySelector('.check-wrapper__size').innerText = `, ${inputPrice.alt}` ;
+        document.querySelector('.check-wrapper__size').innerText = `, ${inputPrice.alt}`;
         document.querySelector('.check-wrapper__size').style.color = '#f14a58';
         let item = document.querySelector('.size .filter__item-section');
         item.style.backgroundColor = '#f7f7f7';
@@ -77,8 +79,8 @@ function f2() {
         category.style.left = 20 + 'px';
         category.style.fontSize = 12 + 'px';
     } else {
-        if(inputPrice.alt === 'Not selected'){
-            inputPrice.previousElementSibling.classList.toggle( 'label--active-not');
+        if (inputPrice.alt === 'Not selected') {
+            inputPrice.previousElementSibling.classList.toggle('label--active-not');
             document.querySelector('.check-wrapper__size').innerText = `, Size`;
             document.querySelector('.check-wrapper__size').style.color = 'black';
         }
@@ -97,11 +99,11 @@ brand.addEventListener('click', f3);
 
 function f3() {
     let inputPrice = document.querySelector('.brand input[type=radio]:checked');
-    if( inputPrice.alt !== 'Not selected' ){
-        inputPrice.previousElementSibling.classList.toggle( 'label--active');
+    if (inputPrice.alt !== 'Not selected') {
+        inputPrice.previousElementSibling.classList.toggle('label--active');
 
         document.querySelector('.brand .item__name').innerText = inputPrice.alt;
-        document.querySelector('.check-wrapper__brand').innerText = `, ${inputPrice.alt}` ;
+        document.querySelector('.check-wrapper__brand').innerText = `, ${inputPrice.alt}`;
         document.querySelector('.check-wrapper__brand').style.color = '#f14a58';
         let item = document.querySelector('.brand .filter__item-section');
         item.style.backgroundColor = '#f7f7f7';
@@ -115,8 +117,8 @@ function f3() {
         category.style.left = 20 + 'px';
         category.style.fontSize = 12 + 'px';
     } else {
-        if(inputPrice.alt === 'Not selected'){
-            inputPrice.previousElementSibling.classList.toggle( 'label--active-not');
+        if (inputPrice.alt === 'Not selected') {
+            inputPrice.previousElementSibling.classList.toggle('label--active-not');
             document.querySelector('.check-wrapper__brand').innerText = `, Brand`;
             document.querySelector('.check-wrapper__brand').style.color = 'black';
         }
@@ -135,11 +137,11 @@ color.addEventListener('click', f4);
 
 function f4() {
     let inputPrice = document.querySelector('.color input[type=radio]:checked');
-    if( inputPrice.alt !== 'Not selected' ){
-        inputPrice.previousElementSibling.classList.toggle( 'label--active');
+    if (inputPrice.alt !== 'Not selected') {
+        inputPrice.previousElementSibling.classList.toggle('label--active');
 
         document.querySelector('.color .item__name').innerText = inputPrice.alt;
-        document.querySelector('.check-wrapper__color').innerText = `, ${inputPrice.alt}` ;
+        document.querySelector('.check-wrapper__color').innerText = `, ${inputPrice.alt}`;
         document.querySelector('.check-wrapper__color').style.color = '#f14a58';
         let item = document.querySelector('.color .filter__item-section');
         item.style.backgroundColor = '#f7f7f7';
@@ -153,8 +155,8 @@ function f4() {
         category.style.left = 20 + 'px';
         category.style.fontSize = 12 + 'px';
     } else {
-        if(inputPrice.alt === 'Not selected'){
-            inputPrice.previousElementSibling.classList.toggle( 'label--active-not');
+        if (inputPrice.alt === 'Not selected') {
+            inputPrice.previousElementSibling.classList.toggle('label--active-not');
             document.querySelector('.check-wrapper__color').innerText = `, Color`;
             document.querySelector('.check-wrapper__color').style.color = 'black';
         }
@@ -173,11 +175,11 @@ product.addEventListener('click', f5);
 
 function f5() {
     let inputPrice = document.querySelector('.product input[type=radio]:checked');
-    if( inputPrice.alt !== 'Not selected' ){
-        inputPrice.previousElementSibling.classList.toggle( 'label--active');
+    if (inputPrice.alt !== 'Not selected') {
+        inputPrice.previousElementSibling.classList.toggle('label--active');
 
         document.querySelector('.product .item__name').innerText = inputPrice.alt;
-        document.querySelector('.check-wrapper__product').innerText = `, ${inputPrice.alt}` ;
+        document.querySelector('.check-wrapper__product').innerText = `, ${inputPrice.alt}`;
         document.querySelector('.check-wrapper__product').style.color = '#f14a58';
         let item = document.querySelector('.product .filter__item-section');
         item.style.backgroundColor = '#f7f7f7';
@@ -191,8 +193,8 @@ function f5() {
         category.style.left = 20 + 'px';
         category.style.fontSize = 12 + 'px';
     } else {
-        if(inputPrice.alt === 'Not selected'){
-            inputPrice.previousElementSibling.classList.toggle( 'label--active-not');
+        if (inputPrice.alt === 'Not selected') {
+            inputPrice.previousElementSibling.classList.toggle('label--active-not');
             document.querySelector('.check-wrapper__product').innerText = `, Product`;
             document.querySelector('.check-wrapper__product').style.color = 'black';
 
@@ -206,6 +208,7 @@ function f5() {
         item.style.backgroundColor = 'white';
     }
 }
+
 let fashion = document.querySelector('.list__fashion');
 fashion.addEventListener('click', f6);
 
@@ -213,11 +216,11 @@ function f6() {
     let inputPrice = document.querySelector('.fashion input[type=radio]:checked');
 
 
-    if( inputPrice.alt !== 'Not selected' ){
+    if (inputPrice.alt !== 'Not selected') {
 
-        inputPrice.previousElementSibling.classList.toggle( 'label--active');
+        inputPrice.previousElementSibling.classList.toggle('label--active');
         document.querySelector('.fashion .item__name').innerText = inputPrice.alt;
-        document.querySelector('.check-wrapper__fashion').innerText = `${inputPrice.alt}` ;
+        document.querySelector('.check-wrapper__fashion').innerText = `${inputPrice.alt}`;
         document.querySelector('.check-wrapper__fashion').style.color = '#f14a58';
 
         let item = document.querySelector('.fashion .filter__item-section');
@@ -235,8 +238,8 @@ function f6() {
         category.style.fontSize = 12 + 'px';
 
     } else {
-        if(inputPrice.alt === 'Not selected'){
-            inputPrice.previousElementSibling.classList.toggle( 'label--active-not');
+        if (inputPrice.alt === 'Not selected') {
+            inputPrice.previousElementSibling.classList.toggle('label--active-not');
             document.querySelector('.check-wrapper__fashion').innerText = `Fashion`;
             document.querySelector('.check-wrapper__fashion').style.color = 'black';
         }
@@ -255,6 +258,99 @@ function f6() {
     }
 }
 
+
+const sortedCatalog = window.catalog;
+sortedCatalog.sort((a, b) => {
+    if (new Date(a.dateAdded) > new Date(b.dateAdded))
+        return -1;
+    if (new Date(a.dateAdded) < new Date(b.dateAdded))
+        return 1;
+    return 0
+});
+
+let catalogRender = [];
+let counterCatalog = 0;
+for (let item of sortedCatalog) {
+    if (item.category === 'women' && item.fashion === 'Casual style') {
+        console.log(item.preview[1]);
+        catalogRender.push(item);
+    }
+}
+
+let idCatalog = document.querySelector('#containerCatalog');
+for (let i = 0; i < catalogRender.length; i++) {
+    counterCatalog = i;
+    creatItems(); //Draw all items
+}
+
+function creatItems() {
+    let anchor = document.createElement('a');
+    anchor.classList.add('catalog__anchor');
+    anchor.href = '#';
+
+    let itemWrapper = document.createElement('div');
+    itemWrapper.classList.add('catalog__item');
+
+        let imgWrapper = document.createElement('div');
+        imgWrapper.classList.add('catalog__img-wrapper');
+
+        let textImg = document.createElement('p');
+        textImg.classList.add('catalog__text-Img');
+        textImg.innerText = 'View item';
+
+        let itemImg = document.createElement('img');
+        itemImg.classList.add('catalog__img');
+        itemImg.src = catalogRender[counterCatalog].preview[1];
+
+    let itemH2 = document.createElement('h2');
+    itemH2.classList.add('catalog__h2');
+    itemH2.innerText = catalogRender[counterCatalog].title;
+
+    let pWrapper = document.createElement('div');
+    pWrapper.classList.add('catalog__p-wrapper');
+    
+        if ( catalogRender[counterCatalog].price > catalogRender[counterCatalog].discountedPrice
+            &&  catalogRender[counterCatalog].price !== null ){
+            let itemPOldWrapper = document.createElement('div');
+            itemPOldWrapper.classList.add('p-wrapper__price');
+
+            let lineCatalog = document.createElement('hr');
+            lineCatalog.classList.add('catalog__lineHr');
+
+            let itemPOld = document.createElement('p');
+            itemPOld.classList.add('catalog__p-old');
+            itemPOld.classList.add('catalog__price');
+            itemPOld.innerText = '£' +  catalogRender[counterCatalog].price;
+
+            pWrapper.append(itemPOldWrapper);
+            itemPOldWrapper.append(itemPOld);
+            if( catalogRender[counterCatalog].discountedPrice !== null){
+            itemPOldWrapper.append(lineCatalog);
+                }
+
+        }
+
+        if(catalogRender[counterCatalog].discountedPrice !== null){
+            let itemP = document.createElement('p');
+            itemP.classList.add('catalog__p');
+            itemP.classList.add('catalog__price');
+            itemP.innerText = '£' + catalogRender[counterCatalog].discountedPrice;
+            pWrapper.append(itemP);
+        }
+
+
+
+
+    imgWrapper.append(textImg);
+    imgWrapper.append(itemImg);
+    anchor.append(imgWrapper);
+    itemWrapper.append(anchor);
+    itemWrapper.append(itemH2);
+    itemWrapper.append(pWrapper);
+
+
+    idCatalog.append(itemWrapper);
+};
 
 
 
