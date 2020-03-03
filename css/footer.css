@@ -54,7 +54,9 @@ main {
     font-family: "Roboto";
     font-weight: 400;
 }
-
+.footer__box1 a:hover, .footer__box2 a:hover{
+    text-decoration: underline;
+}
 .footer__block2 {
     padding: 60px 0 60px 60px;
     width: 50%;
