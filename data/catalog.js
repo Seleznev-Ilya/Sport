@@ -11,7 +11,7 @@ window.catalog = [{
     colors: [],
     sizes: [],
     thumbnail: 'thumbnail path', // replace with path to image extracted from catalog layout
-    preview: ['img/all/p8.png', 'img/all/p8.png', 'img/all/p8.png'] // replace with paths to images extracted from item layout
+    preview: ['img/all/p8.png', 'img/all/top8/p8.png', 'img/all/top8/p.png'] // replace with paths to images extracted from item layout
 }, {
     id: '07cf6ce2-6eee-4e78-a441-f257fdea7ed6',
     dateAdded: '2017-06-12T15:35:13.000Z',
@@ -25,7 +25,7 @@ window.catalog = [{
     colors: ['Black', 'White'],
     sizes: ['UK 18'],
     thumbnail: 'thumbnail path', // replace with image extracted from item layout
-    preview: ['img/page_1/BoyfriendT-ShirtwithBoheminPrint.png', 'img/all/p6.png', 'img/all/p6.png'] // replace with paths to images extracted from item layout
+    preview: ['img/page_1/BoyfriendT-ShirtwithBoheminPrint.png', 'img/all/top6/p6.png', 'img/all/top6/p.png'] // replace with paths to images extracted from item layout
 }, {
     id: '0fdfa061-838d-42ab-ae06-99c66115f633',
     dateAdded: '2017-02-12T11:14:29.000Z',
@@ -39,7 +39,7 @@ window.catalog = [{
     colors: [],
     sizes: [],
     thumbnail: 'thumbnail path', // replace with image extracted from item layout
-    preview: ['img/all/p9.png', 'img/all/p9.png', 'img/all/p9.png'] // replace with paths to images extracted from item layout
+    preview: ['img/all/p9.png', 'img/all/top9/p9.png', 'img/all/top9/p.png'] // replace with paths to images extracted from item layout
 }, {
     id: '4a3d3c3e-9dc5-4d99-b33d-42b22e20dc0b',
     dateAdded: '2017-08-02T15:00:40.000Z',
@@ -53,7 +53,7 @@ window.catalog = [{
     colors: ['Blue'],
     sizes: ['UK 18'],
     thumbnail: 'thumbnail path', // replace with image extracted from item layout
-    preview: ['img/all/p13.png', 'img/all/p13.png', 'img/all/p13.png'] // replace with paths to images extracted from item layout
+    preview: ['img/all/p13.png', 'img/all/top13/p13.png', 'img/all/top13/p.png'] // replace with paths to images extracted from item layout
 }, {
     id: '5677f851-1c4a-4e9b-80e9-16d1e6265257',
     dateAdded: '2017-07-07T10:00:39.000Z',
@@ -67,7 +67,7 @@ window.catalog = [{
     colors: ['Blue'],
     sizes: ['UK 18'],
     thumbnail: 'thumbnail path', // replace with image extracted from item layout
-    preview: ['img/page_1/levisJeansForWomen.png', 'img/all/p5.png', 'img/all/p5.png'] // replace with paths to images extracted from item layout
+    preview: ['img/page_1/levisJeansForWomen.png', 'img/all/to5/p5.png', 'img/all/to5/p.png'] // replace with paths to images extracted from item layout
 }, {
     id: '739d3ae0-6dca-4453-a7a4-a94b841a296d',
     dateAdded: '2017-07-12T09:02:55.000Z',
@@ -81,7 +81,7 @@ window.catalog = [{
     colors: [],
     sizes: [],
     thumbnail: 'thumbnail path', // replace with image extracted from item layout
-    preview: ['img/page_1/withPachworkCrochet.png', 'img/all/p4.png', 'img/all/p4.png'] // replace with paths to images extracted from item layout
+    preview: ['img/page_1/withPachworkCrochet.png', 'img/all/top4/p4.png', 'img/all/top4/p.png'] // replace with paths to images extracted from item layout
 }, {
     id: '80d32566-d81c-4ba0-9edf-0eceda3b4360',
     dateAdded: '2017-01-01T13:26:14.000Z',
@@ -123,7 +123,7 @@ window.catalog = [{
     colors: ['Phillipa wash'],
     sizes: ['UK 17'],
     thumbnail: 'thumbnail path', // replace with image extracted from item layout
-    preview: ['img/page_1/onlySkinnyJeans.png', 'img/page_1/onlySkinnyJeans.png', 'img/page_1/onlySkinnyJeans.png'] // replace with paths to images extracted from item layout
+    preview: ['img/page_1/onlySkinnyJeans.png', 'img/all/top1/p1.png', 'img/all/top1/p2.png'] // replace with paths to images extracted from item layout
 }, {
     id: '9ded7821-e510-4a16-ba9f-57c1e3442ad8',
     dateAdded: '2017-07-19T15:11:04.000Z',
@@ -137,7 +137,7 @@ window.catalog = [{
     colors: [],
     sizes: [],
     thumbnail: 'thumbnail path', // replace with image extracted from item layout
-    preview: ['img/page_1/turtleNeckJumper.png', 'img/page_1/turtleNeckJumper.png', 'img/page_1/turtleNeckJumper.png'] // replace with paths to images extracted from item layout
+    preview: ['img/page_1/turtleNeckJumper.png', 'img/all/top3/p3.png', 'img/all/top3/p.png'] // replace with paths to images extracted from item layout
 }, {
     id: 'bec71daa-d133-473d-bbb0-1ee0a427a17d',
     dateAdded: '2017-03-09T17:51:45.000Z',
@@ -179,7 +179,7 @@ window.catalog = [{
     colors: ['Raw umber', 'Dark blue'],
     sizes: ['UK 18', 'UK 19'],
     thumbnail: 'thumbnail path', // replace with image extracted from item layout
-    preview: ['img/page_1/OversizedCardigan.png', 'img/page_1/OversizedCardigan.png', 'img/page_1/OversizedCardigan.png'] // replace with paths to images extracted from item layout
+    preview: ['img/page_1/OversizedCardigan.png', 'img/all/top12/p12.png', 'img/all/top12/p.png'] // replace with paths to images extracted from item layout
 }, {
     id: 'ff665110-5e7f-435d-b1b4-651c3d5050ca',
     dateAdded: '2017-04-05T10:04:16.000Z',
