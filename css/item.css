@@ -1,0 +1,23 @@
+@import "style.css";
+@import "catalogStyle/catalogFooter.css";
+
+.anchor__link a {
+    margin: 30px 0;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 65px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-weight: 700;
+}
+.anchor__link a:hover{
+    color: #f14a58;
+}
+.img-box1{
+    max-width: 590px;
+    max-height: 390px;
+}
+.imgTest{
+    width: 100%;
+    height: auto;
+}

@@ -272,7 +272,6 @@ let catalogRender = [];
 let counterCatalog = 0;
 for (let item of sortedCatalog) {
     if (item.category === 'women' && item.fashion === 'Casual style') {
-        console.log(item.preview[1]);
         catalogRender.push(item);
     }
 }
@@ -281,13 +280,14 @@ let idCatalog = document.querySelector('#containerCatalog');
 for (let i = 0; i < catalogRender.length; i++) {
     counterCatalog = i;
     creatItems(); //Draw all items
-    if( i === 1 || i === 2 || i === 3){
+    if (i === 1 || i === 2 || i === 3) {
         writAdText(i); // Ad block
     }
 }
+
 // ad => advertisement ;)
 function writAdText(a) {
-let itemTextAd = document.createElement('div');
+    let itemTextAd = document.createElement('div');
     itemTextAd.classList.add(`catalog__textAd${a}`);
 
     let itemTextAdH2Wrapper = document.createElement('div');
@@ -308,60 +308,65 @@ let itemTextAd = document.createElement('div');
     // itemTextAd.append(itemTextAdP1);
     idCatalog.append(itemTextAd);
 }
+
 function creatItems() {
     let anchor = document.createElement('a');
     anchor.classList.add('catalog__anchor');
-    anchor.href = '#';
+    anchor.setAttribute('itemId', catalogRender[counterCatalog].id);
+    anchor.href = 'item.html';
 
     let itemWrapper = document.createElement('div');
     itemWrapper.classList.add('catalog__item');
+    itemWrapper.setAttribute('itemId', catalogRender[counterCatalog].id);
 
-        let imgWrapper = document.createElement('div');
-        imgWrapper.classList.add('catalog__img-wrapper');
+    let imgWrapper = document.createElement('div');
+    imgWrapper.classList.add('catalog__img-wrapper');
 
-        let textImg = document.createElement('p');
-        textImg.classList.add('catalog__text-Img');
-        textImg.innerText = 'View item';
+    let textImg = document.createElement('p');
+    textImg.classList.add('catalog__text-Img');
+    textImg.setAttribute('itemId', catalogRender[counterCatalog].id);
+    textImg.innerText = 'View item';
 
-        let itemImg = document.createElement('img');
-        itemImg.classList.add('catalog__img');
-        itemImg.alt = catalogRender[counterCatalog].title;
-        itemImg.src = catalogRender[counterCatalog].preview[1];
+    let itemImg = document.createElement('img');
+    itemImg.classList.add('catalog__img');
+    itemImg.alt = catalogRender[counterCatalog].title;
+    itemImg.src = catalogRender[counterCatalog].preview[1];
 
     let itemH2 = document.createElement('h2');
     itemH2.classList.add('catalog__h2');
+    itemH2.setAttribute('itemId', catalogRender[counterCatalog].id);
     itemH2.innerText = catalogRender[counterCatalog].title;
 
     let pWrapper = document.createElement('div');
     pWrapper.classList.add('catalog__p-wrapper');
 
-        if ( catalogRender[counterCatalog].price > catalogRender[counterCatalog].discountedPrice
-            &&  catalogRender[counterCatalog].price !== null ){
-            let itemPOldWrapper = document.createElement('div');
-            itemPOldWrapper.classList.add('p-wrapper__price');
+    if (catalogRender[counterCatalog].price > catalogRender[counterCatalog].discountedPrice
+        && catalogRender[counterCatalog].price !== null) {
+        let itemPOldWrapper = document.createElement('div');
+        itemPOldWrapper.classList.add('p-wrapper__price');
 
-            let lineCatalog = document.createElement('hr');
-            lineCatalog.classList.add('catalog__lineHr');
+        let lineCatalog = document.createElement('hr');
+        lineCatalog.classList.add('catalog__lineHr');
 
-            let itemPOld = document.createElement('p');
-            itemPOld.classList.add('catalog__p-old');
-            itemPOld.classList.add('catalog__price');
-            itemPOld.innerText = '£' +  catalogRender[counterCatalog].price;
+        let itemPOld = document.createElement('p');
+        itemPOld.classList.add('catalog__p-old');
+        itemPOld.classList.add('catalog__price');
+        itemPOld.innerText = '£' + catalogRender[counterCatalog].price;
 
-            pWrapper.append(itemPOldWrapper);
-            itemPOldWrapper.append(itemPOld);
-            if( catalogRender[counterCatalog].discountedPrice !== null){
+        pWrapper.append(itemPOldWrapper);
+        itemPOldWrapper.append(itemPOld);
+        if (catalogRender[counterCatalog].discountedPrice !== null) {
             itemPOldWrapper.append(lineCatalog);
-                }
         }
+    }
 
-        if(catalogRender[counterCatalog].discountedPrice !== null){
-            let itemP = document.createElement('p');
-            itemP.classList.add('catalog__p');
-            itemP.classList.add('catalog__price');
-            itemP.innerText = '£' + catalogRender[counterCatalog].discountedPrice;
-            pWrapper.append(itemP);
-        }
+    if (catalogRender[counterCatalog].discountedPrice !== null) {
+        let itemP = document.createElement('p');
+        itemP.classList.add('catalog__p');
+        itemP.classList.add('catalog__price');
+        itemP.innerText = '£' + catalogRender[counterCatalog].discountedPrice;
+        pWrapper.append(itemP);
+    }
 
     imgWrapper.append(textImg);
     imgWrapper.append(itemImg);
@@ -369,11 +374,17 @@ function creatItems() {
     itemWrapper.append(anchor);
     itemWrapper.append(itemH2);
     itemWrapper.append(pWrapper);
-
-
     idCatalog.append(itemWrapper);
+}
+idCatalog.onclick = function (event) {
+    let target = event.target;
+    for (let key of catalogRender) {
+        if (key.id === target.getAttribute('itemId')) {
+           let objItem = JSON.stringify(key);
+            sessionStorage.setItem("objItem", objItem)
+        }
+    }
 };
-
 
 
 
