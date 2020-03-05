@@ -109,7 +109,7 @@ window.catalog = [{
     colors: ['Green'],
     sizes: ['UK 19'],
     thumbnail: 'thumbnail path', // replace with image extracted from item layout
-    preview: ['img/page_1/neckKinittedJumper.png', 'img/all/p2.png', 'img/all/p2.png'] // replace with paths to images extracted from item layout
+    preview: ['img/page_1/neckKinittedJumper.png', 'img/all/top2/p2.jpg', 'img/all/top2/p1.2.jpg'] // replace with paths to images extracted from item layout
 }, {
     id: '8c061815-6a7d-4465-bb78-1bdc6c5adebf',
     dateAdded: '2017-08-28T09:15:36.000Z',

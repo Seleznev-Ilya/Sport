@@ -330,7 +330,7 @@ function creatItems() {
     let itemImg = document.createElement('img');
     itemImg.classList.add('catalog__img');
     itemImg.alt = catalogRender[counterCatalog].title;
-    itemImg.src = catalogRender[counterCatalog].preview[1];
+    itemImg.src = catalogRender[counterCatalog].preview[0];
 
     let itemH2 = document.createElement('h2');
     itemH2.classList.add('catalog__h2');
