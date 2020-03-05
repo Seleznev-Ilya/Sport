@@ -121,5 +121,17 @@ function checkThis(arg) {
         itemColor.innerText = ' Oops! Colors over :(';
         itemDescription.append(itemColor);
     }
+
+    let itemButtonAdd = document.createElement('div');
+    itemButtonAdd.classList.add('itemButtonAdd');
+    let itemButtonAddText = document.createElement('p');
+    itemButtonAddText.classList.add('itemButtonAddText');
+    itemButtonAddText.innerText = 'Add to bag';
+
+    if (itemIdObj.sizes.length !== 0 && itemIdObj.sizes.length !== 0){
+
+        itemButtonAdd.append(itemButtonAddText);
+        itemDescription.append(itemButtonAdd);
+    }
 }
 
