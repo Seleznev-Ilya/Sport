@@ -135,3 +135,15 @@ function checkThis(arg) {
     }
 }
 
+let buttonItemBag = document.querySelector('.itemButtonAdd');
+
+buttonItemBag.addEventListener('click', addIdInLocalStor2);
+function addIdInLocalStor2() {
+    for (let key in localStorage) {
+        if (!localStorage.hasOwnProperty(key)) {
+            continue;
+        }
+        localStorage.setItem('slicker', slicker.id);
+        console.log('запись');
+    }
+}

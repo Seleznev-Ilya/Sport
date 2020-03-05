@@ -1,6 +1,6 @@
 const cardItem = []; // for draw rads
-const priceRight = []; // to get data to calculate common price with slider left
-const priceLeft = []; // to get data to calculate ... right
+const priceRight = []; //  data to calculate common price with slider left
+const priceLeft = []; //  data to calculate ... right
 
 function drawSliderCards() {
     for (let key of window.catalog) { // card (key) of catalog cards
@@ -16,6 +16,7 @@ function drawSliderCards() {
                     img: image
                 });
                 priceLeft.push({
+                    id: key['id'],
                     title: key['title'],
                     price: price,
                     img: image
@@ -42,6 +43,7 @@ function drawSliderCards() {
                     img: image2
                 });
                 priceRight.push({
+                    id: key2['id'],
                     title: key2['title'],
                     price: price2,
                     img: image2
@@ -119,29 +121,40 @@ btnLeftTop.addEventListener('click', function () {
         counterLeft--;
     }
 });
+let idForBagFromLeft = '';
+let idForBagFromRight = '';
 btnLeftTop.addEventListener('click', () => {
     let a = document.getElementById('notDiscountedPrice');
     let b = document.getElementById('discountedPrice');
     a.innerHTML = `£${+priceLeft[counterLeft].price + +priceRight[counterRight].price}`;
     b.innerHTML = `£${(+priceLeft[counterLeft].price + +priceRight[counterRight].price) - window.bestOffer.discount}`;
+    idForBagFromLeft = priceLeft[counterLeft].id;
+    console.log(idForBagFromLeft);
+
 });
 btnRightDown.addEventListener('click', () => {
     let a = document.getElementById('notDiscountedPrice');
     let b = document.getElementById('discountedPrice');
     a.innerHTML = `£${+priceLeft[counterLeft].price + +priceRight[counterRight].price}`;
     b.innerHTML = `£${(+priceLeft[counterLeft].price + +priceRight[counterRight].price) - window.bestOffer.discount}`;
+    idForBagFromRight = priceRight[counterRight].id;
+    console.log(idForBagFromRight);
 });
 btnLeftDown.addEventListener('click', () => {
     let a = document.getElementById('notDiscountedPrice');
     let b = document.getElementById('discountedPrice');
     a.innerHTML = `£${+priceLeft[counterLeft].price + +priceRight[counterRight].price}`;
     b.innerHTML = `£${(+priceLeft[counterLeft].price + +priceRight[counterRight].price) - window.bestOffer.discount}`;
+    idForBagFromLeft = priceLeft[counterLeft].id;
+    console.log(idForBagFromLeft);
 });
 btnRightTop.addEventListener('click', () => {
     let a = document.getElementById('notDiscountedPrice');
     let b = document.getElementById('discountedPrice');
     a.innerHTML = `£${+priceLeft[counterLeft].price + +priceRight[counterRight].price}`;
     b.innerHTML = `£${(+priceLeft[counterLeft].price + +priceRight[counterRight].price) - window.bestOffer.discount}`;
+    idForBagFromRight = priceRight[counterRight].id;
+    console.log(idForBagFromRight);
 });
 let arr = [];
 
@@ -180,7 +193,18 @@ function arrivals() {
 arrivals();
 
 
+let sliderAddBag = document.querySelector('.slider__bag');
 
+sliderAddBag.addEventListener('click', addIdInLocalStor);
 
-
+function addIdInLocalStor() {
+    for (let key in localStorage) {
+        if (!localStorage.hasOwnProperty(key)) {
+            continue;
+        }
+        localStorage.setItem('leftIdStart', idForBagFromLeft);
+        localStorage.setItem('rightIdStart', idForBagFromRight);
+        console.log('запись');
+    }
+}
 

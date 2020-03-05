@@ -1,0 +1,129 @@
+@import "style.css";
+
+.footer-bag__text {
+    box-sizing: border-box;
+    text-align: center;
+    min-height: 41px;
+    background-color: #f7f7f7;
+    line-height: 41px;
+}
+
+.footer-bag__text p {
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-align: center;
+}
+
+.footer-bag__text p span {
+    color: #f14a58;
+}
+
+.footer__total-price {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 100px;
+    line-height: 75px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__button-bag {
+    width: 345px;
+    height: 75px;
+    border: 1px solid lightgray;
+    line-height: 75px;
+    text-align: center;
+}
+
+.footer__button-bag p {
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+
+.total-price p {
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 65px;
+    color: #000000;
+    font-family: "Roboto";
+    font-weight: 700;
+    text-align: right;
+}
+
+.total-price, .footer__button-bag, .bagEmpty {
+    width: 33%;
+}
+
+.bag__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cardOfGoods {
+    display: flex;
+    margin: 30px;
+}
+
+.bagDescriptionWrapper {
+    padding: 12px;
+    width: 230px;
+    height: 86px;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #000000;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+.bagtitleCard, .bagPriceCard {
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: #000000;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+
+.bagRemove {
+    color: #f14a58;
+}
+
+.bagPriceCard {
+    margin-bottom: 35px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+    .total-price, .footer__button-bag, .bagEmpty {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .total-price p {
+        text-align: center;
+    }
+
+    .footer__total-price {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .footer__button-bag {
+        width: 220px;
+        height: 60px;
+        line-height: 60px;
+    }
+}
