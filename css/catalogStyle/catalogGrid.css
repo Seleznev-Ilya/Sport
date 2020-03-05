@@ -8,13 +8,15 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.catalog__anchor{
+
+.catalog__anchor {
     margin: 0 auto 45px;
     width: 200px;
     height: 290px;
     display: block;
 }
-.catalog__text-Img{
+
+.catalog__text-Img {
     font-size: 22px;
     letter-spacing: 1px;
     line-height: 65px;
@@ -23,7 +25,8 @@
     font-weight: 700;
     text-align: center;
 }
-.catalog__h2{
+
+.catalog__h2 {
     font-size: 14px;
     letter-spacing: 0px;
     line-height: 24px;
@@ -32,17 +35,20 @@
     font-weight: 700;
     text-align: center;
 }
-.catalog__item:hover .catalog__h2{
+
+.catalog__item:hover .catalog__h2 {
     color: #f14a58;
 }
-.catalog__p-wrapper{
+
+.catalog__p-wrapper {
     max-width: 200px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.catalog__price{
+
+.catalog__price {
     font-size: 14px;
     letter-spacing: 0px;
     line-height: 65px;
@@ -52,11 +58,13 @@
     text-align: center;
     margin: 0;
 }
-.p-wrapper__price{
+
+.p-wrapper__price {
     position: relative;
     margin-right: 10px;
 }
-.catalog__lineHr{
+
+.catalog__lineHr {
     background-color: red;
     height: 1px;
     width: 45px;
@@ -66,15 +74,18 @@
     top: 32px;
     left: -5px;
 }
-.catalog__textAd1, .catalog__textAd2,.catalog__textAd3{
+
+.catalog__textAd1, .catalog__textAd2, .catalog__textAd3 {
     width: 100%;
 }
-.TextAdH2Wrapper{
+
+.TextAdH2Wrapper {
     text-align: center;
     margin-top: 80px;
     margin-bottom: 80px;
 }
-.catalog__textH2Ad{
+
+.catalog__textH2Ad {
     font-size: 24px;
     letter-spacing: 1px;
     line-height: 34px;
@@ -83,7 +94,8 @@
     font-weight: 700;
     text-align: center;
 }
-.catalog__descriptionAd{
+
+.catalog__descriptionAd {
     font-size: 16px;
     line-height: 30px;
     color: #000000;
@@ -91,16 +103,20 @@
     font-style: italic;
     text-align: center;
 }
+
 @media (min-width: 1024px) {
-    .catalog__textAd1, .catalog__textAd2{
+    .catalog__textAd1, .catalog__textAd2 {
         display: none;
     }
-    #containerCatalog .catalog__textAd:nth-child(2){
+
+    #containerCatalog .catalog__textAd:nth-child(2) {
         display: none;
     }
-    #containerCatalog .catalog__textAd:nth-child(3){
+
+    #containerCatalog .catalog__textAd:nth-child(3) {
         display: none;
     }
+
     .catalog__item {
         width: 25%;
         box-sizing: border-box;
@@ -124,6 +140,7 @@
         height: 290px;
         margin: 0;
     }
+
     .catalog__item:hover .catalog__text-Img {
         display: block;
         text-align: center;
@@ -135,14 +152,15 @@
         width: 100%;
         height: 290px;
     }
-    .catalog__h2{
+
+    .catalog__h2 {
         max-width: 200px;
         margin: 0 auto;
     }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .catalog__textH2Ad{
+    .catalog__textH2Ad {
         font-size: 20px;
         letter-spacing: 1px;
         line-height: 34px;
@@ -151,7 +169,8 @@
         font-weight: 700;
         text-align: center;
     }
-    .catalog__descriptionAd{
+
+    .catalog__descriptionAd {
         font-size: 16px;
         line-height: 30px;
         color: #000000;
@@ -159,14 +178,17 @@
         font-style: italic;
         text-align: center;
     }
-    .catalog__textAd1, .catalog__textAd3{
+
+    .catalog__textAd1, .catalog__textAd3 {
         display: none;
     }
+
     .catalog__item {
         width: 33%;
         box-sizing: border-box;
         padding: 10px 0 0;
     }
+
     .catalog__img-wrapper {
         width: 200px;
         display: flex;
@@ -184,6 +206,7 @@
         height: 290px;
         margin: 0;
     }
+
     .catalog__item:hover .catalog__text-Img {
         display: block;
         text-align: center;
@@ -195,6 +218,7 @@
         width: 100%;
         height: 290px;
     }
+
     .catalog__h2 {
         max-width: 200px;
         margin: 0 auto;
@@ -202,7 +226,7 @@
 }
 
 @media (max-width: 768px) {
-    .catalog__textH2Ad{
+    .catalog__textH2Ad {
         font-size: 18px;
         letter-spacing: 1px;
         line-height: 30px;
@@ -211,7 +235,8 @@
         font-weight: 700;
         text-align: center;
     }
-    .catalog__descriptionAd{
+
+    .catalog__descriptionAd {
         font-size: 14px;
         line-height: 28px;
         color: #000000;
@@ -219,15 +244,18 @@
         font-style: italic;
         text-align: center;
     }
-    .catalog__textAd3, .catalog__textAd2{
+
+    .catalog__textAd3, .catalog__textAd2 {
         display: none;
     }
+
     .catalog__item {
         box-sizing: border-box;
         padding: 10px 0 0;
         width: 50%;
 
     }
+
     .catalog__img-wrapper {
         width: 160px;
         display: flex;
@@ -245,6 +273,7 @@
         height: 225px;
         margin: 0;
     }
+
     .catalog__item:hover .catalog__text-Img {
         display: block;
         text-align: center;
@@ -256,13 +285,15 @@
         width: 100%;
         height: 225px;
     }
-    .catalog__anchor{
+
+    .catalog__anchor {
         margin: 0 auto 35px;
         width: 160px;
         height: 225px;
         display: block;
     }
-    .catalog__h2{
+
+    .catalog__h2 {
         max-width: 160px;
         font-size: 12px;
         letter-spacing: 0px;

@@ -97,7 +97,6 @@
     position: relative;
 }
 
-
 .slider__card-left p, .slider__card-right p {
     width: 240px;
     margin: 0;
@@ -203,7 +202,6 @@
     position: absolute;
     top: 46%;
     left: 42%;
-
     font-size: 34px;
     letter-spacing: 1px;
     color: #000000;
@@ -303,7 +301,6 @@ h1 {
 
 .arrivals__cards img {
     height: 290px;
-
 }
 
 .arrivals__cards p:nth-child(2) {
@@ -320,18 +317,20 @@ h1 {
     font-family: "Roboto";
     font-weight: 400;
     text-align: center;
-
 }
 
 .arrivals h1 {
     margin: 100px auto 70px;
 }
-.slider__bag:hover, .arrivals__all:hover{
-    border: 1px solid #d14b58;
-}.slider__bag:hover p, .arrivals__all:hover p{
-    color: #d14b58;
 
+.slider__bag:hover, .arrivals__all:hover {
+    border: 1px solid #d14b58;
 }
+
+.slider__bag:hover p, .arrivals__all:hover p {
+    color: #d14b58;
+}
+
 @media (min-width: 769px) and (max-width: 1024px) {
     .arrivals__cards:nth-child(1) {
         display: none;
@@ -346,7 +345,6 @@ h1 {
 
     .arrivals__cards img {
         height: 345px;
-
     }
 
     .arrivals__cards p:nth-child(2) {
@@ -363,7 +361,6 @@ h1 {
         font-family: "Roboto";
         font-weight: 400;
         text-align: center;
-
     }
 
     #discountedPrice:before {
@@ -387,7 +384,6 @@ h1 {
 
     .slider__bag--mobile-table-hide {
         display: none;
-
     }
 
     .slider__bag--mobile-table-show {
@@ -424,7 +420,6 @@ h1 {
     .slider_area, .slider_area2 {
         width: 210px;
         height: 385px;
-
     }
 
     .slider__card-left, .slider__card-right {
@@ -509,7 +504,6 @@ h1 {
 
     .section-photo__description h2 {
         font-size: 22px;
-
     }
 
     h1 {
@@ -532,7 +526,6 @@ h1 {
         font-style: italic;
         margin: 0 auto;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -566,7 +559,6 @@ h1 {
         font-family: "Roboto";
         font-weight: 400;
         text-align: center;
-
     }
 
     h1 {
@@ -608,7 +600,6 @@ h1 {
         top: 25%;
         left: 37%;
         font-size: 18px;
-
     }
 
     #discountedPrice {

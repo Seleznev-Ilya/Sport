@@ -1,3 +1,4 @@
+"use strict";
 const cardItem = []; // for draw rads
 const priceRight = []; //  data to calculate common price with slider left
 const priceLeft = []; //  data to calculate ... right
@@ -129,7 +130,6 @@ btnLeftTop.addEventListener('click', () => {
     a.innerHTML = `£${+priceLeft[counterLeft].price + +priceRight[counterRight].price}`;
     b.innerHTML = `£${(+priceLeft[counterLeft].price + +priceRight[counterRight].price) - window.bestOffer.discount}`;
     idForBagFromLeft = priceLeft[counterLeft].id;
-    console.log(idForBagFromLeft);
 
 });
 btnRightDown.addEventListener('click', () => {
@@ -138,7 +138,6 @@ btnRightDown.addEventListener('click', () => {
     a.innerHTML = `£${+priceLeft[counterLeft].price + +priceRight[counterRight].price}`;
     b.innerHTML = `£${(+priceLeft[counterLeft].price + +priceRight[counterRight].price) - window.bestOffer.discount}`;
     idForBagFromRight = priceRight[counterRight].id;
-    console.log(idForBagFromRight);
 });
 btnLeftDown.addEventListener('click', () => {
     let a = document.getElementById('notDiscountedPrice');
@@ -146,7 +145,6 @@ btnLeftDown.addEventListener('click', () => {
     a.innerHTML = `£${+priceLeft[counterLeft].price + +priceRight[counterRight].price}`;
     b.innerHTML = `£${(+priceLeft[counterLeft].price + +priceRight[counterRight].price) - window.bestOffer.discount}`;
     idForBagFromLeft = priceLeft[counterLeft].id;
-    console.log(idForBagFromLeft);
 });
 btnRightTop.addEventListener('click', () => {
     let a = document.getElementById('notDiscountedPrice');
@@ -154,7 +152,6 @@ btnRightTop.addEventListener('click', () => {
     a.innerHTML = `£${+priceLeft[counterLeft].price + +priceRight[counterRight].price}`;
     b.innerHTML = `£${(+priceLeft[counterLeft].price + +priceRight[counterRight].price) - window.bestOffer.discount}`;
     idForBagFromRight = priceRight[counterRight].id;
-    console.log(idForBagFromRight);
 });
 let arr = [];
 
@@ -191,7 +188,6 @@ function arrivals() {
 }
 
 arrivals();
-
 
 let sliderAddBag = document.querySelector('.slider__bag');
 

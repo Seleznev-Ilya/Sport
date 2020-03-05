@@ -1,4 +1,5 @@
 @import "style.css";
+
 main {
     min-height: 77vh;
 }
@@ -12,8 +13,6 @@ main {
 .footer__wrapper1 {
     display: flex;
     width: 100%;
-
-
 }
 
 .footer__wrapper2 {
@@ -22,8 +21,6 @@ main {
     width: 100%;
     vertical-align: center;
     align-items: center;
-
-
 }
 
 .footer__block1 {
@@ -54,15 +51,16 @@ main {
     font-family: "Roboto";
     font-weight: 400;
 }
-.footer__box1 a:hover, .footer__box2 a:hover{
+
+.footer__box1 a:hover, .footer__box2 a:hover {
     text-decoration: underline;
 }
+
 .footer__block2 {
     padding: 60px 0 60px 60px;
     width: 50%;
     display: flex;
     flex-direction: column;
-
 }
 
 .footer__box1, .footer__box2 {
@@ -98,7 +96,6 @@ main {
     color: #000000;
     font-family: "Roboto";
     font-weight: 400;
-
 }
 
 .footer__box4 p:nth-child(2) {
@@ -178,7 +175,6 @@ main {
     justify-content: space-around;
 }
 
-
 .footer__box6 .footer__box9 {
     display: none;
 }
@@ -186,7 +182,6 @@ main {
 .footer__hr--mobile {
     display: none;
 }
-
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .footer__box5 {
@@ -280,10 +275,9 @@ main {
         display: block;
         width: 100%;
     }
-    .footer__box4{
+
+    .footer__box4 {
         padding-left: 20px;
         border-left: 1px solid #e5e5e5;
     }
-
-
 }

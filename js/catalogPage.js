@@ -258,7 +258,6 @@ function f6() {
     }
 }
 
-
 const sortedCatalog = window.catalog;
 sortedCatalog.sort((a, b) => {
     if (new Date(a.dateAdded) > new Date(b.dateAdded))
@@ -285,7 +284,7 @@ for (let i = 0; i < catalogRender.length; i++) {
     }
 }
 
-// ad => advertisement ;)
+// ad => advertisement
 function writAdText(a) {
     let itemTextAd = document.createElement('div');
     itemTextAd.classList.add(`catalog__textAd${a}`);
@@ -305,7 +304,6 @@ function writAdText(a) {
     itemTextAdH2Wrapper.append(itemTextAdH2l);
     itemTextAdH2Wrapper.append(itemTextAdP1);
     itemTextAd.append(itemTextAdH2Wrapper);
-    // itemTextAd.append(itemTextAdP1);
     idCatalog.append(itemTextAd);
 }
 
@@ -376,11 +374,12 @@ function creatItems() {
     itemWrapper.append(pWrapper);
     idCatalog.append(itemWrapper);
 }
+
 idCatalog.onclick = function (event) {
     let target = event.target;
     for (let key of catalogRender) {
         if (key.id === target.getAttribute('itemId')) {
-           let objItem = JSON.stringify(key);
+            let objItem = JSON.stringify(key);
             sessionStorage.setItem("objItem", objItem)
         }
     }

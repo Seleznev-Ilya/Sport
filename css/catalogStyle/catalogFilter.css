@@ -122,9 +122,10 @@
 .check-wrapper__item span {
     color: black;
 }
+
 @media (min-width: 1024px) {
     .item__list {
-        box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
         background-color: white;
         z-index: 60;
     }
@@ -249,7 +250,6 @@
 
     .filter__wrapper--out-table-mobile {
         position: relative;
-
     }
 
     .filter__item:hover {
@@ -458,14 +458,13 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        width: 100% ;
+        width: 100%;
         position: absolute;
         left: -20px;
         top: 67px;
         background-color: white;
         z-index: 50;
         padding-right: 40px;
-
     }
 
     .filter__wrapper.filter__wrapper-show {

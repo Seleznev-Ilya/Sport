@@ -1,11 +1,10 @@
+"use strict";
 let slicker = JSON.parse(sessionStorage.getItem("objItem"));
 let itemDescription = document.querySelector('.block__items-text');
-
 let imgTest = document.querySelector('.imgTest');
 let imgTest1 = document.querySelector('.imgTest1');
 let imgTest2 = document.querySelector('.imgTest2');
 let imgTest3 = document.querySelector('.imgTest3');
-
 let imgInput1 = document.querySelector('#image1');
 let imgInput2 = document.querySelector('#image2');
 let imgInput3 = document.querySelector('#image3');
@@ -67,7 +66,6 @@ function checkThis(arg) {
     let itemSize = document.createElement('h2');
     itemSize.classList.add('itemSize');
 
-
     if (itemIdObj.sizes.length !== 0) {
         for (let i = 0; i < itemIdObj.sizes.length; i++) {
             let buttonSize = document.createElement('label');
@@ -128,7 +126,7 @@ function checkThis(arg) {
     itemButtonAddText.classList.add('itemButtonAddText');
     itemButtonAddText.innerText = 'Add to bag';
 
-    if (itemIdObj.sizes.length !== 0 && itemIdObj.sizes.length !== 0){
+    if (itemIdObj.sizes.length !== 0 && itemIdObj.sizes.length !== 0) {
 
         itemButtonAdd.append(itemButtonAddText);
         itemDescription.append(itemButtonAdd);
@@ -138,12 +136,12 @@ function checkThis(arg) {
 let buttonItemBag = document.querySelector('.itemButtonAdd');
 
 buttonItemBag.addEventListener('click', addIdInLocalStor2);
+
 function addIdInLocalStor2() {
     for (let key in localStorage) {
         if (!localStorage.hasOwnProperty(key)) {
             continue;
         }
         localStorage.setItem('slicker', slicker.id);
-        console.log('запись');
     }
 }

@@ -101,9 +101,6 @@
     margin-bottom: 35px;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-}
-
 @media (max-width: 768px) {
     .total-price, .footer__button-bag, .bagEmpty {
         width: 100%;
