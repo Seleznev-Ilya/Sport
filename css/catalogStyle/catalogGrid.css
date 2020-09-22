@@ -275,10 +275,13 @@
     }
 
     .catalog__item:hover .catalog__text-Img {
-        display: block;
+        display: none;
         text-align: center;
         line-height: 225px;
         background-color: rgba(0, 0, 0, 0.3);
+    }
+    .catalog__item:hover .catalog__h2 {
+        color: black;
     }
 
     .catalog__img {

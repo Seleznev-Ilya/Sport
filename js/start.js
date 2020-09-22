@@ -1,4 +1,19 @@
 "use strict";
+let sneakerObj = {
+    id: '1',
+    dateAdded: '2017-08-02T15:00:40.000Z',
+    title: 'Sneaker',
+    description: '',
+    discountedPrice: null,
+    price: 143,
+    hasNew: false,
+    category: 'women',
+    fashion: 'Nail the 90s',
+    colors: [],
+    sizes: [],
+    thumbnail: 'thumbnail path', // replace with image extracted from item layout
+    preview: ['img/page_1/nikeRed.png', 'img/page_1/nikeRed2.png', 'img/page_1/nikeRed3.png'] // replace with paths to images extracted from item layout
+};
 const cardItem = []; // for draw rads
 const priceRight = []; //  data to calculate common price with slider left
 const priceLeft = []; //  data to calculate ... right
@@ -188,12 +203,21 @@ function arrivals() {
 }
 
 arrivals();
+// _______________________________________________________________________
+let homePageItem = document.querySelector('.section-photo__description');
+homePageItem.addEventListener('click', addSneakerToItemPage);
+
+function addSneakerToItemPage(){
+            let objItem = JSON.stringify(sneakerObj);
+            sessionStorage.setItem("objItem", objItem)
+}
+// ______________________________________________________________________
 
 let sliderAddBag = document.querySelector('.slider__bag');
 
-sliderAddBag.addEventListener('click', addIdInLocalStor);
+sliderAddBag.addEventListener('click', addIdInLocalStore);
 
-function addIdInLocalStor() {
+function addIdInLocalStore() {
     for (let key in localStorage) {
         if (!localStorage.hasOwnProperty(key)) {
             continue;

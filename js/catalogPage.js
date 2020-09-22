@@ -14,9 +14,9 @@ function hideFilter() {
 }
 
 let price = document.querySelector('.list__price ');
-price.addEventListener('click', f);
+price.addEventListener('click', changeConditionFashion);
 
-function f() {
+function changeConditionFashion() {
     let inputPrice = document.querySelector('.price input[type=radio]:checked');
     if (inputPrice.alt !== 'Not selected') {
         inputPrice.previousElementSibling.classList.toggle('label--active');
@@ -57,9 +57,9 @@ function f() {
 }
 
 let size = document.querySelector('.list__size ');
-size.addEventListener('click', f2);
+size.addEventListener('click', changeConditionProduct);
 
-function f2() {
+function changeConditionProduct() {
     let inputPrice = document.querySelector('.size input[type=radio]:checked');
     if (inputPrice.alt !== 'Not selected') {
         inputPrice.previousElementSibling.classList.toggle('label--active');
@@ -95,9 +95,9 @@ function f2() {
 }
 
 let brand = document.querySelector('.list__brand ');
-brand.addEventListener('click', f3);
+brand.addEventListener('click', changeConditionColor);
 
-function f3() {
+function changeConditionColor() {
     let inputPrice = document.querySelector('.brand input[type=radio]:checked');
     if (inputPrice.alt !== 'Not selected') {
         inputPrice.previousElementSibling.classList.toggle('label--active');
@@ -133,9 +133,9 @@ function f3() {
 }
 
 let color = document.querySelector('.list__color');
-color.addEventListener('click', f4);
+color.addEventListener('click', changeConditionBrand);
 
-function f4() {
+function changeConditionBrand() {
     let inputPrice = document.querySelector('.color input[type=radio]:checked');
     if (inputPrice.alt !== 'Not selected') {
         inputPrice.previousElementSibling.classList.toggle('label--active');
@@ -171,9 +171,9 @@ function f4() {
 }
 
 let product = document.querySelector('.list__product');
-product.addEventListener('click', f5);
+product.addEventListener('click', changeConditionSize);
 
-function f5() {
+function changeConditionSize() {
     let inputPrice = document.querySelector('.product input[type=radio]:checked');
     if (inputPrice.alt !== 'Not selected') {
         inputPrice.previousElementSibling.classList.toggle('label--active');
@@ -210,9 +210,9 @@ function f5() {
 }
 
 let fashion = document.querySelector('.list__fashion');
-fashion.addEventListener('click', f6);
+fashion.addEventListener('click', changeConditionSizePrice);
 
-function f6() {
+function changeConditionSizePrice() {
     let inputPrice = document.querySelector('.fashion input[type=radio]:checked');
 
 

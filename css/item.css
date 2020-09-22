@@ -36,6 +36,7 @@
     max-width: 590px;
     height: 390px;
     background-color: #f6f6f6;
+    overflow: hidden;
 }
 
 .item__img-wrapper {
@@ -180,6 +181,7 @@ input {
         width: 55%;
         max-width: none;
         height: 350px;
+        overflow: hidden;
     }
 
     .item__img-wrapper {
@@ -243,6 +245,7 @@ input {
         width: 100%;
         max-width: none;
         height: 225px;
+        overflow: hidden;
     }
 
     .item__img-wrapper {

@@ -20,6 +20,31 @@ function takeIbforBag(a, b, c) {
 
 takeIbforBag(bLeft, bRight, bItem);
 
+// let bagArray = [];
+// function addingNewGoods() {
+//     for (let item of window.catalog) {
+//         if (bLeft === item.id || bRight === item.id || bItem === item.id ) {
+//             bagArray.push(bLeft);
+//         }if (bLeft === item.id || bRight === item.id || bItem === item.id ) {
+//             bagArray.push(bLeft);
+//         }if (bLeft === item.id || bRight === item.id || bItem === item.id ) {
+//             bagArray.push(bLeft);
+//         }
+//         // for (let key in localStorage) {
+//         //     if (!localStorage.hasOwnProperty(key)) {
+//         //         continue;
+//         //     }
+//             localStorage.setItem('bagArray', bagArray);
+//         // }
+//         for ( let bagItem of localStorage.getItem('bagArray')){
+//             drawBag(bagItem);
+//         }
+//
+//
+//     }
+// }
+// addingNewGoods();
+
 function drawBag(a) {
     let cardOfGoods = document.createElement('div');
     cardOfGoods.classList.add('cardOfGoods');

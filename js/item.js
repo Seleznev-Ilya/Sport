@@ -11,21 +11,21 @@ let imgInput3 = document.querySelector('#image3');
 
 checkThis(sessionStorage.getItem("objItem"));
 
-imgTest1.addEventListener('click', slick1);
-imgTest2.addEventListener('click', slick2);
-imgTest3.addEventListener('click', slick3);
+imgTest1.addEventListener('click', showLeftPicture);
+imgTest2.addEventListener('click', showCentralPicture);
+imgTest3.addEventListener('click', showRightPicture);
 
-function slick1() {
+function showLeftPicture() {
     imgInput1.checked = true;
     imgTest.src = slicker.preview[0];
 }
 
-function slick2() {
+function showCentralPicture() {
     imgInput2.checked = true;
     imgTest.src = slicker.preview[1];
 }
 
-function slick3() {
+function showRightPicture() {
     imgInput3.checked = true;
     imgTest.src = slicker.preview[2];
 }
@@ -122,6 +122,11 @@ function checkThis(arg) {
 
     let itemButtonAdd = document.createElement('div');
     itemButtonAdd.classList.add('itemButtonAdd');
+
+    let itemButtonAddAnchor = document.createElement('a');
+    itemButtonAddAnchor.classList.add('itemButtonAddAnchor');
+    itemButtonAddAnchor.href= "bag.html";
+
     let itemButtonAddText = document.createElement('p');
     itemButtonAddText.classList.add('itemButtonAddText');
     itemButtonAddText.innerText = 'Add to bag';
@@ -129,7 +134,8 @@ function checkThis(arg) {
     if (itemIdObj.sizes.length !== 0 && itemIdObj.sizes.length !== 0) {
 
         itemButtonAdd.append(itemButtonAddText);
-        itemDescription.append(itemButtonAdd);
+        itemButtonAddAnchor.append(itemButtonAdd);
+        itemDescription.append(itemButtonAddAnchor);
     }
 }
 

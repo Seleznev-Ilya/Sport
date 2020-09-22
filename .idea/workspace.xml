@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="deaf5f2a-b2b2-44b3-878c-5eec4ace805b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bag.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bag.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/catalogStyle/catalogGrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/catalogStyle/catalogGrid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/item.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bag.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/catalogPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/catalogPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/item.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/start.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/start.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,6 +80,8 @@
       <updated>1583224450552</updated>
       <workItem from="1583224451808" duration="93208000" />
       <workItem from="1583441077856" duration="127000" />
+      <workItem from="1583443241780" duration="59000" />
+      <workItem from="1585141289953" duration="7498000" />
     </task>
     <servers />
   </component>
